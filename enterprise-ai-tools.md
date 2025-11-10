@@ -15,13 +15,18 @@
 - [Distributed Computing & Processing](#-distributed-computing--processing)
 - [Data Privacy & Security](#-data-privacy--security)
 - [Vector Databases](#-vector-databases)
+- [Embedding Models](#-embedding-models)
+- [Reranking & Retrieval](#-reranking--retrieval)
 - [LLM Providers](#-llm-providers)
 - [LLM Inference & Serving](#-llm-inference--serving)
+- [Model Registry & Versioning](#-model-registry--versioning)
+- [Prompt Management & LLMOps](#-prompt-management--llmops)
+- [LLM Security & Guardrails](#-llm-security--guardrails)
+- [RAG Frameworks](#-rag-frameworks)
 - [Agentic Workflows & Orchestration](#-agentic-workflows--orchestration)
 - [RAG Evaluation & Testing](#-rag-evaluation--testing)
 - [Observability & Monitoring](#-observability--monitoring)
 - [Cloud Platforms](#-cloud-platforms)
-- [Application Development](#-application-development)
 
 ---
 
@@ -250,6 +255,104 @@
 
 ---
 
+### Chroma
+**🔗 Links:** [Website](https://www.trychroma.com) · [Docs](https://docs.trychroma.com) · [GitHub](https://github.com/chroma-core/chroma)
+
+**⚡ What:** Open-source embedding database built for AI applications
+
+**🎯 Use When:**
+- Building AI-native applications with embeddings-first design
+- Need simple, developer-friendly vector database
+- Prototyping to production with same API
+- Want both in-memory (dev) and persistent (prod) modes
+
+**💪 Why:**
+- Python-first design with minimal setup (pip install chromadb)
+- Built-in embedding generation with multiple providers
+- Filtering by metadata, document content, and similarity
+- Scales from laptop to distributed cloud deployment
+- LangChain, LlamaIndex, and major framework integrations
+
+**📊 License:** Apache 2.0 | **Support:** Community + Chroma Cloud (managed)
+
+---
+
+## 🎯 Embedding Models
+
+### Voyage AI
+**🔗 Links:** [Website](https://www.voyageai.com) · [Docs](https://docs.voyageai.com) · [API](https://docs.voyageai.com/docs/embeddings)
+
+**⚡ What:** State-of-the-art embedding models for RAG and search
+
+**🎯 Use When:**
+- Need cutting-edge embedding performance (9.74% better than OpenAI)
+- Processing long documents (32K token context vs OpenAI's 8K)
+- Multilingual retrieval (100+ languages)
+- Cost-sensitive deployments (voyage-3.5-lite)
+
+**💪 Why:**
+- **voyage-3-large:** SOTA across 100 datasets, 8 domains
+- Optimized specifically for RAG and retrieval tasks
+- Domain-specific models: code, finance, law, multilingual
+- 32K token context window vs competitors' 8K-512 tokens
+- voyage-3.5-lite: Best cost-performance ratio for production
+
+**💰 Pricing:** Pay-per-use, volume discounts available
+
+**📊 License:** Proprietary | **Support:** Enterprise support available
+
+---
+
+### Cohere Embed
+**🔗 Links:** [Website](https://cohere.com/embed) · [Docs](https://docs.cohere.com/docs/embeddings) · [Pricing](https://cohere.com/pricing)
+
+**⚡ What:** Multilingual embeddings with 128K context for RAG
+
+**🎯 Use When:**
+- Multilingual applications (100+ languages)
+- Processing very long documents (128K tokens = 200 pages)
+- Need 96% embedding compression for cost savings
+- Regulated industries requiring enterprise compliance
+
+**💪 Why:**
+- **Embed 4:** Multimodal (text + images), 128K context
+- Optimized for agentic search and retrieval
+- Outperforms OpenAI/Voyage in many languages
+- Available: Cohere Platform, AWS SageMaker, Azure AI Foundry
+- Strong compliance for finance, healthcare, manufacturing
+
+**💰 Pricing:** $0.10/1M tokens (Embed v3), volume discounts
+
+**📊 License:** Proprietary | **Support:** Enterprise support
+
+---
+
+## 🔍 Reranking & Retrieval
+
+### Cohere Rerank
+**🔗 Links:** [Website](https://cohere.com/rerank) · [Docs](https://docs.cohere.com/docs/reranking) · [Pricing](https://cohere.com/pricing)
+
+**⚡ What:** Industry-leading reranking models for RAG precision
+
+**🎯 Use When:**
+- Boosting RAG retrieval accuracy (15%+ improvement typical)
+- Multi-stage retrieval pipelines (fast retrieval + precise reranking)
+- Need to reduce LLM context window (fewer, better results)
+- Multilingual reranking required
+
+**💪 Why:**
+- Significantly improves relevance vs vector search alone
+- Reduces tokens sent to LLM → lower costs
+- Cross-encoder architecture for semantic relevance
+- Multilingual support (100+ languages)
+- Integrates with all major vector databases
+
+**💰 Pricing:** $1-$2 per 1K searches (volume discounts)
+
+**📊 License:** Proprietary | **Support:** Enterprise support
+
+---
+
 ## 🤖 LLM Providers
 
 ### OpenAI
@@ -369,6 +472,28 @@
 
 ## ⚡ LLM Inference & Serving
 
+### Unsloth
+**🔗 Links:** [Website](https://unsloth.ai) · [GitHub](https://github.com/unslothai/unsloth) · [Docs](https://docs.unsloth.ai)
+
+**⚡ What:** 2-5x faster, 70% less memory LLM fine-tuning
+
+**🎯 Use When:**
+- Fine-tuning LLMs on limited GPU resources (even free Colab/Kaggle)
+- Need fast iteration cycles for model customization
+- Training with long context lengths (4x longer sequences)
+- Cost optimization: reduce training time and GPU requirements
+
+**💪 Why:**
+- 2-5x faster fine-tuning with 70% less memory usage
+- Supports 100+ models: Llama, Mistral, Gemma, Qwen, Phi, etc.
+- Works with QLoRA, LoRA, full fine-tuning
+- All kernels manually written (no PyTorch Autograd)
+- Free tier on Colab/Kaggle, scales to multi-GPU
+
+**📊 License:** Apache 2.0 | **Support:** Community + Unsloth Pro ($99-$999/mo)
+
+---
+
 ### vLLM
 **🔗 Links:** [Website](https://docs.vllm.ai) · [GitHub](https://github.com/vllm-project/vllm)
 
@@ -412,6 +537,126 @@
 
 ---
 
+## 📦 Model Registry & Versioning
+
+### MLflow
+**🔗 Links:** [Website](https://mlflow.org) · [Docs](https://mlflow.org/docs/latest) · [GitHub](https://github.com/mlflow/mlflow)
+
+**⚡ What:** Open-source platform for ML lifecycle management
+
+**🎯 Use When:**
+- Managing LLM fine-tuning experiments and versions
+- Need centralized model registry with staging/production
+- Tracking prompts, parameters, weights, dependencies
+- Enterprise governance and lineage tracking required
+
+**💪 Why:**
+- De facto standard for ML lifecycle (70M+ downloads/month)
+- Model Registry: versioning, stage transitions, annotations, lineage
+- Native LLM support: prompt packaging, parameter tracking, fine-tuned weights
+- Integrates with all major platforms: Databricks, AWS SageMaker, Azure ML
+- RBAC and governance for enterprise compliance
+
+**📊 License:** Apache 2.0 | **Support:** Community + Databricks MLflow (managed)
+
+---
+
+### Weights & Biases (W&B)
+**🔗 Links:** [Website](https://wandb.ai) · [Docs](https://docs.wandb.ai) · [Pricing](https://wandb.ai/site/pricing)
+
+**⚡ What:** MLOps platform for experiment tracking and model management
+
+**🎯 Use When:**
+- Large-scale model training with comprehensive tracking
+- Need real-time collaboration and experiment comparison
+- Building LLMOps with prompt versioning and evaluation
+- Want production monitoring and observability
+
+**💪 Why:**
+- Real-time experiment tracking with visualizations
+- Prompt versioning, evaluation frameworks, chain monitoring
+- Artifact versioning for datasets, models, and prompts
+- Team collaboration with shared dashboards and reports
+- Production model monitoring and performance tracking
+
+**💰 Pricing:** Free tier → Teams ($50/user/mo) → Enterprise (custom)
+
+**📊 License:** Proprietary | **Support:** Community + Enterprise support
+
+---
+
+### AWS SageMaker Model Registry
+**🔗 Links:** [Website](https://aws.amazon.com/sagemaker) · [Docs](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
+
+**⚡ What:** Managed ML model catalog for SageMaker
+
+**🎯 Use When:**
+- AWS-native ML infrastructure required
+- Need integrated model deployment pipelines
+- Compliance and approval workflows needed
+- Building on SageMaker training/inference
+
+**💪 Why:**
+- Centralized model catalog with metadata and lineage
+- Approval workflows for model governance
+- Direct integration with SageMaker endpoints
+- Cross-account model sharing and discovery
+- Foundation model fine-tuning support (2025)
+
+**📊 License:** Proprietary (AWS) | **Support:** AWS Enterprise Support
+
+---
+
+## 🎛️ Prompt Management & LLMOps
+
+### Portkey
+**🔗 Links:** [Website](https://portkey.ai) · [Docs](https://docs.portkey.ai) · [GitHub](https://github.com/Portkey-AI/gateway)
+
+**⚡ What:** Production AI gateway with prompt management and observability
+
+**🎯 Use When:**
+- Managing 1600+ LLM providers through unified API
+- Need centralized prompt versioning and deployment
+- Processing 10B+ monthly LLM requests
+- Require AI gateway with guardrails and routing
+
+**💪 Why:**
+- **AI Gateway:** Unified access to 1600+ LLMs with load balancing
+- **Prompt Management:** Version control, A/B testing, rollback
+- **Observability:** End-to-end tracing, metrics, debugging
+- **Guardrails:** 50+ integrated safety checks
+- Fortune 500 trusted, 16K+ developers
+
+**💰 Pricing:** Free tier → Growth → Enterprise
+
+**📊 License:** Apache 2.0 (gateway) | **Support:** Enterprise support
+
+---
+
+### Langfuse
+**🔗 Links:** [Website](https://langfuse.com) · [Docs](https://langfuse.com/docs) · [GitHub](https://github.com/langfuse/langfuse)
+
+**⚡ What:** Open-source LLM observability and prompt management
+
+**🎯 Use When:**
+- Need open-source observability platform
+- Tracking prompt chains and agent workflows
+- Real-time monitoring and evaluation
+- Self-hosted deployment required
+
+**💪 Why:**
+- Complete LLM application observability
+- Prompt versioning with performance tracking
+- User analytics and cost tracking
+- LangChain, LlamaIndex, Vercel AI SDK integrations
+- Self-hosted or cloud deployment options
+
+**💰 Pricing:** Open-source (self-hosted) → Cloud (usage-based) → Enterprise
+
+**📊 License:** MIT | **Support:** Community + Enterprise
+
+---
+
 ## 🔗 Agentic Workflows & Orchestration
 
 ### LangChain Ecosystem
@@ -435,6 +680,123 @@
 **LangSmith:** End-to-end tracing, debugging, monitoring; AWS Marketplace (2025); Cloud, Hybrid, Self-Hosted deployment
 
 **📊 License:** MIT | **Support:** LangSmith Plus + Enterprise
+
+---
+
+### Vercel AI SDK
+**🔗 Links:** [Website](https://ai-sdk.dev) · [Docs](https://ai-sdk.dev/docs) · [GitHub](https://github.com/vercel/ai)
+
+**⚡ What:** TypeScript toolkit for AI-powered frontends
+
+**🎯 Use When:**
+- Building AI chat interfaces with streaming responses
+- Next.js applications requiring server-side AI integration
+- Need multi-model support (30+ LLM providers)
+- Edge runtime deployments for low-latency global inference
+
+**💪 Why:**
+- Unified API across OpenAI, Anthropic, Google, AWS Bedrock, open-source
+- First-class streaming with React Server Components (RSC)
+- **AI SDK 6 (beta 2025):** Agent abstraction, tool execution approval, human-in-the-loop
+- Vercel AI Cloud: AI Gateway, DDoS/bot protection, WAF, Fluid Compute
+
+**💰 Pricing:** Free tier → Pro → Enterprise with custom DDoS/IP blocking
+
+**📊 License:** Apache 2.0 | **Support:** Vercel Enterprise
+
+---
+
+## 🛡️ LLM Security & Guardrails
+
+### NVIDIA NeMo Guardrails
+**🔗 Links:** [Website](https://www.nvidia.com/en-us/ai-data-science/products/nemo/) · [Docs](https://docs.nvidia.com/nemo/guardrails) · [GitHub](https://github.com/NVIDIA/NeMo-Guardrails)
+
+**⚡ What:** Programmable guardrails for conversational AI safety
+
+**🎯 Use When:**
+- Building production LLM applications requiring safety controls
+- Need topical guardrails (prevent off-topic responses)
+- Preventing hallucinations and unsafe outputs
+- Implementing fact-checking and content moderation
+
+**💪 Why:**
+- Open-source framework from NVIDIA
+- Define guardrails as policies in simple configuration files
+- Input/output rails for request and response filtering
+- Integrates with LangChain, LlamaIndex, custom applications
+- Part of NVIDIA NeMo ecosystem for enterprise AI
+
+**📊 License:** Apache 2.0 | **Support:** NVIDIA AI Enterprise
+
+---
+
+### Fiddler Guardrails
+**🔗 Links:** [Website](https://www.fiddler.ai) · [Docs](https://docs.fiddler.ai/docs/guardrails) · [Product](https://www.fiddler.ai/blog/introducing-fiddler-guardrails)
+
+**⚡ What:** Enterprise guardrails for LLM safety and security
+
+**🎯 Use When:**
+- Enterprise-scale protection (5M+ requests/day)
+- Need <100ms latency for production apps
+- Preventing hallucinations, jailbreaks, prompt injection
+- Compliance with safety and security policies
+
+**💪 Why:**
+- Moderates prompts and responses in real-time
+- Pre-built detectors: hallucinations, PII, toxicity, bias
+- Custom policy creation for business rules
+- Enterprise scalability out of the box
+- Integration with major LLM providers
+
+**💰 Pricing:** Contact for enterprise pricing
+
+**📊 License:** Proprietary | **Support:** Enterprise support
+
+---
+
+## 🔧 RAG Frameworks
+
+### LlamaIndex
+**🔗 Links:** [Website](https://www.llamaindex.ai) · [Docs](https://docs.llamaindex.ai) · [GitHub](https://github.com/run-llama/llama_index)
+
+**⚡ What:** Data framework for building LLM applications
+
+**🎯 Use When:**
+- Building RAG applications with complex data sources
+- Need advanced retrieval strategies (hybrid, semantic, keyword)
+- Want modular, composable components for data ingestion
+- Building agents that query structured and unstructured data
+
+**💪 Why:**
+- 200+ data connectors (APIs, databases, files, web)
+- Advanced indexing: vector, tree, graph, knowledge graph
+- Query engines with reasoning capabilities
+- Agent tools for multi-step reasoning over data
+- Production-ready with observability integrations
+
+**📊 License:** MIT | **Support:** Community + LlamaCloud (managed)
+
+---
+
+### Haystack
+**🔗 Links:** [Website](https://haystack.deepset.ai) · [Docs](https://docs.haystack.deepset.ai) · [GitHub](https://github.com/deepset-ai/haystack)
+
+**⚡ What:** Open-source NLP framework for production RAG
+
+**🎯 Use When:**
+- Building production RAG pipelines at scale
+- Need flexible pipeline composition
+- Want both retrieval and generation in one framework
+- Enterprise search and question answering required
+
+**💪 Why:**
+- Production-ready RAG pipelines with 30+ integrations
+- Modular components: retrievers, readers, rankers, generators
+- Support for multiple vector stores and LLM providers
+- Built-in evaluation and monitoring
+- deepset Cloud for managed deployment
+
+**📊 License:** Apache 2.0 | **Support:** Community + deepset Cloud (managed)
 
 ---
 
@@ -603,31 +965,6 @@
 
 ---
 
-## 🎨 Application Development
-
-### Vercel AI SDK
-**🔗 Links:** [Website](https://ai-sdk.dev) · [Docs](https://ai-sdk.dev/docs) · [GitHub](https://github.com/vercel/ai)
-
-**⚡ What:** TypeScript toolkit for AI-powered frontends
-
-**🎯 Use When:**
-- Building AI chat interfaces with streaming responses
-- Next.js applications requiring server-side AI integration
-- Need multi-model support (30+ LLM providers)
-- Edge runtime deployments for low-latency global inference
-
-**💪 Why:**
-- Unified API across OpenAI, Anthropic, Google, AWS Bedrock, open-source
-- First-class streaming with React Server Components (RSC)
-- **AI SDK 6 (beta 2025):** Agent abstraction, tool execution approval, human-in-the-loop
-- Vercel AI Cloud: AI Gateway, DDoS/bot protection, WAF, Fluid Compute
-
-**💰 Pricing:** Free tier → Pro → Enterprise with custom DDoS/IP blocking
-
-**📊 License:** Apache 2.0 | **Support:** Vercel Enterprise
-
----
-
 ## 📚 Quick Reference
 
 ### By Data Flow
@@ -639,31 +976,43 @@
 4. Data Curation → NeMo Curator
 5. Distributed Processing → RAPIDS, Ray
 6. Privacy/PII Removal → Presidio
-7. Vector Storage → Milvus, PostgreSQL+pgvector
-8. LLM Providers → OpenAI, Claude, Cohere, Grok, Hugging Face
-9. LLM Inference → vLLM, NIM, Ray
-10. Agent Orchestration → LangChain/LangGraph
-11. RAG Evaluation → Ragas, DeepEval
-12. Monitoring → Prometheus, Grafana, Loki
-13. Cloud Platforms → AWS Bedrock, Azure OpenAI
-14. Frontend Integration → Vercel AI SDK
+7. Vector Storage → Milvus, PostgreSQL+pgvector, Chroma
+8. Embeddings → Voyage AI, Cohere Embed
+9. Reranking → Cohere Rerank
+10. LLM Providers → OpenAI, Claude, Cohere, Grok, Hugging Face
+11. LLM Fine-tuning → Unsloth
+12. LLM Inference → vLLM, NIM, Ray
+13. Model Registry → MLflow, W&B, SageMaker
+14. Prompt Management → Portkey, Langfuse
+15. Guardrails → NeMo Guardrails, Fiddler
+16. RAG Frameworks → LlamaIndex, Haystack
+17. Agent Orchestration → LangChain/LangGraph, Vercel AI SDK
+18. RAG Evaluation → Ragas, DeepEval
+19. Monitoring → Prometheus, Grafana, Loki
+20. Cloud Platforms → AWS Bedrock, Azure OpenAI
 ```
 
 ### By Use Case
 
 **Building RAG Application:**
 ```
-Documents → Unstructured/Docling → Presidio → Milvus/pgvector
-Query → LangChain → vLLM/NIM/Ray → Response
+Documents → Unstructured/Docling → Presidio → Chroma/Milvus/pgvector
+Embeddings → Voyage AI/Cohere Embed
+Retrieval → Vector Search → Cohere Rerank
+RAG Framework → LlamaIndex/Haystack
+Query → LangChain/Vercel AI SDK → vLLM/NIM/Ray → Response
+Guardrails → NeMo Guardrails/Fiddler
 Evaluate → Ragas, DeepEval
 Red Team → DeepEval/DeepTeam
-Monitor → LangSmith, Prometheus, Grafana
-Frontend → Vercel AI SDK
+Monitor → Langfuse, Prometheus, Grafana
+Prompt Mgmt → Portkey, Langfuse
 ```
 
-**Training Foundation Model:**
+**Fine-tuning & Serving Foundation Model:**
 ```
 Raw Data → NeMo Curator → RAPIDS (processing) → Ray (distributed training)
+Fine-tune → Unsloth
+Model Registry → MLflow/W&B/SageMaker
 Model → vLLM/NIM/Ray (serving) → Production
 Monitor → Prometheus, Grafana
 ```
@@ -672,9 +1021,15 @@ Monitor → Prometheus, Grafana
 ```
 Inputs → Pydantic validation → spaCy preprocessing
 Distributed Processing → RAPIDS, Ray
+Embeddings → Voyage AI/Cohere Embed
+Vector Search → Milvus/pgvector/Chroma
+Reranking → Cohere Rerank
+LLM Gateway → Portkey
 LLM → OpenAI/Claude/Cohere via vLLM/NIM/Ray
-Vector Search → Milvus/pgvector
-Monitor → Prometheus, Grafana, Loki
+Guardrails → NeMo Guardrails/Fiddler
+Agent Framework → LangChain/Vercel AI SDK/LlamaIndex
+Prompt Mgmt → Portkey, Langfuse
+Monitor → Langfuse, Prometheus, Grafana, Loki
 Cloud → AWS Bedrock or Azure OpenAI
 ```
 
@@ -693,15 +1048,30 @@ Cloud → AWS Bedrock or Azure OpenAI
 | Presidio | MIT | Community + Microsoft |
 | Milvus | Apache 2.0 | Zilliz Cloud ($99/mo+) |
 | PostgreSQL+pgvector | PostgreSQL | Cloud providers (AWS, GCP, Azure) |
+| Chroma | Apache 2.0 | Community + Chroma Cloud |
+| Voyage AI | Proprietary | Enterprise support |
+| Cohere Embed | Proprietary | Enterprise support |
+| Cohere Rerank | Proprietary | Enterprise support |
 | OpenAI | Proprietary | Enterprise plans |
 | Anthropic Claude | Proprietary | Enterprise + AWS Marketplace |
 | Cohere | Proprietary | Enterprise support |
 | xAI Grok | Proprietary | Enterprise custom |
 | Hugging Face | Varies | Enterprise Hub |
+| Unsloth | Apache 2.0 | Unsloth Pro ($99-$999/mo) |
 | vLLM | Apache 2.0 | Red Hat OpenShift AI + llm-d |
 | NVIDIA NIM | NVIDIA AI Enterprise | NVIDIA AI Enterprise |
 | Ray | Apache 2.0 | Anyscale (Azure/AWS managed) |
+| MLflow | Apache 2.0 | Databricks MLflow (managed) |
+| Weights & Biases | Proprietary | Enterprise support |
+| AWS SageMaker | Proprietary (AWS) | AWS Enterprise Support |
+| Portkey | Apache 2.0 (gateway) | Enterprise support |
+| Langfuse | MIT | Community + Enterprise |
+| NeMo Guardrails | Apache 2.0 | NVIDIA AI Enterprise |
+| Fiddler Guardrails | Proprietary | Enterprise support |
+| LlamaIndex | MIT | Community + LlamaCloud |
+| Haystack | Apache 2.0 | Community + deepset Cloud |
 | LangChain | MIT | LangSmith Plus + Enterprise |
+| Vercel AI SDK | Apache 2.0 | Vercel Enterprise |
 | Ragas | Apache 2.0 | Enterprise consultation |
 | DeepEval | Apache 2.0 | Confident AI Enterprise + Community |
 | Prometheus | Apache 2.0 | CNCF Community |
@@ -709,7 +1079,6 @@ Cloud → AWS Bedrock or Azure OpenAI
 | Loki | AGPL 3.0 | Grafana Enterprise + Cloud |
 | AWS Bedrock | Proprietary | AWS Enterprise Support |
 | Azure OpenAI | Proprietary | Azure Enterprise Support |
-| Vercel AI SDK | Apache 2.0 | Vercel Enterprise |
 
 ---
 
@@ -718,22 +1087,29 @@ Cloud → AWS Bedrock or Azure OpenAI
 **Documentation:**
 - [Pydantic](https://docs.pydantic.dev) · [spaCy](https://spacy.io) · [Unstructured](https://docs.unstructured.io) · [Docling](https://docling.ai/docs)
 - [NeMo Curator](https://docs.nvidia.com/nemo-framework/user-guide/latest/datacuration/) · [RAPIDS](https://docs.rapids.ai) · [Presidio](https://microsoft.github.io/presidio)
-- [Milvus](https://milvus.io/docs) · [pgvector](https://github.com/pgvector/pgvector) · [OpenAI](https://platform.openai.com/docs)
-- [Claude](https://www.anthropic.com/api) · [Cohere](https://cohere.com/embed) · [Grok](https://docs.x.ai) · [Hugging Face](https://huggingface.co/docs)
-- [vLLM](https://docs.vllm.ai) · [NIM](https://developer.nvidia.com/nim) · [Ray](https://docs.ray.io)
-- [LangChain](https://python.langchain.com) · [Ragas](https://docs.ragas.io) · [DeepEval](https://deepeval.com/docs/getting-started)
+- [Milvus](https://milvus.io/docs) · [pgvector](https://github.com/pgvector/pgvector) · [Chroma](https://docs.trychroma.com)
+- [Voyage AI](https://docs.voyageai.com) · [Cohere Embed](https://docs.cohere.com/docs/embeddings) · [Cohere Rerank](https://docs.cohere.com/docs/reranking)
+- [OpenAI](https://platform.openai.com/docs) · [Claude](https://www.anthropic.com/api) · [Cohere](https://cohere.com/embed) · [Grok](https://docs.x.ai) · [Hugging Face](https://huggingface.co/docs)
+- [Unsloth](https://docs.unsloth.ai) · [vLLM](https://docs.vllm.ai) · [NIM](https://developer.nvidia.com/nim) · [Ray](https://docs.ray.io)
+- [MLflow](https://mlflow.org/docs/latest) · [W&B](https://docs.wandb.ai) · [SageMaker](https://docs.aws.amazon.com/sagemaker)
+- [Portkey](https://docs.portkey.ai) · [Langfuse](https://langfuse.com/docs)
+- [NeMo Guardrails](https://docs.nvidia.com/nemo/guardrails) · [Fiddler](https://docs.fiddler.ai/docs/guardrails)
+- [LlamaIndex](https://docs.llamaindex.ai) · [Haystack](https://docs.haystack.deepset.ai)
+- [LangChain](https://python.langchain.com) · [Vercel AI SDK](https://ai-sdk.dev/docs)
+- [Ragas](https://docs.ragas.io) · [DeepEval](https://deepeval.com/docs/getting-started)
 - [Prometheus](https://prometheus.io/docs) · [Grafana](https://grafana.com/docs) · [Loki](https://grafana.com/docs/loki)
 - [AWS Bedrock](https://docs.aws.amazon.com/bedrock) · [Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai)
-- [Vercel AI SDK](https://ai-sdk.dev/docs)
 
 **GitHub Repositories:**
 - [Pydantic](https://github.com/pydantic/pydantic) · [spaCy](https://github.com/explosion/spaCy) · [Unstructured](https://github.com/Unstructured-IO/unstructured)
 - [Docling](https://github.com/DS4SD/docling) · [NeMo](https://github.com/NVIDIA/NeMo) · [RAPIDS](https://github.com/rapidsai)
-- [Presidio](https://github.com/microsoft/presidio) · [Milvus](https://github.com/milvus-io/milvus) · [pgvector](https://github.com/pgvector/pgvector)
-- [vLLM](https://github.com/vllm-project/vllm) · [Ray](https://github.com/ray-project/ray) · [LangChain](https://github.com/langchain-ai/langchain)
+- [Presidio](https://github.com/microsoft/presidio) · [Milvus](https://github.com/milvus-io/milvus) · [pgvector](https://github.com/pgvector/pgvector) · [Chroma](https://github.com/chroma-core/chroma)
+- [Unsloth](https://github.com/unslothai/unsloth) · [vLLM](https://github.com/vllm-project/vllm) · [Ray](https://github.com/ray-project/ray)
+- [MLflow](https://github.com/mlflow/mlflow) · [Portkey Gateway](https://github.com/Portkey-AI/gateway) · [Langfuse](https://github.com/langfuse/langfuse)
+- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) · [LlamaIndex](https://github.com/run-llama/llama_index) · [Haystack](https://github.com/deepset-ai/haystack)
+- [LangChain](https://github.com/langchain-ai/langchain) · [Vercel AI SDK](https://github.com/vercel/ai)
 - [Ragas](https://github.com/explodinggradients/ragas) · [DeepEval](https://github.com/confident-ai/deepeval) · [DeepTeam](https://github.com/confident-ai/deepteam)
-- [Prometheus](https://github.com/prometheus/prometheus)
-- [Grafana](https://github.com/grafana/grafana) · [Loki](https://github.com/grafana/loki) · [Vercel AI SDK](https://github.com/vercel/ai)
+- [Prometheus](https://github.com/prometheus/prometheus) · [Grafana](https://github.com/grafana/grafana) · [Loki](https://github.com/grafana/loki)
 
 ---
 
