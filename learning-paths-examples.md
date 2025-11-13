@@ -12,37 +12,37 @@ A curated collection of tutorials, playbooks, example repositories, and learning
 **Level:** Beginner to Advanced
 
 **What It Covers:**
-Step-by-step playbooks for setting up and running AI/ML workloads on NVIDIA hardware, specifically designed for the DGX Spark desktop supercomputer.
+Step-by-step playbooks for AI/ML workloads on NVIDIA hardware, designed for DGX Spark desktop supercomputer.
 
 **Key Learning Areas:**
 - **GPU-Accelerated Data Science:**
-  - RAPIDS (cuDF for pandas acceleration, cuML for scikit-learn)
+  - RAPIDS: cuDF (pandas), cuML (scikit-learn)
   - Zero-code-change GPU acceleration
-  - Processing 250 MB datasets in seconds
-  - Handling tens of millions of records with cuDF pandas
+  - 250 MB datasets processed in seconds
+  - Tens of millions of records with cuDF pandas
 
 - **Machine Learning Workflows:**
-  - UMAP and HDBSCAN clustering on GPU
-  - Model training and fine-tuning (LLMs and vision models)
+  - UMAP, HDBSCAN clustering on GPU
+  - Model training, fine-tuning (LLMs, vision models)
   - High-performance numerical computing with JAX
 
 - **Production AI Applications:**
-  - AI code assistants and chatbots
-  - Video search and summarization
+  - AI code assistants, chatbots
+  - Video search, summarization
   - Image generation
   - LLM inference optimization
 
 **Why Use This:**
-- Official NVIDIA resource with production-grade examples
-- Demonstrates real-world GPU acceleration benefits (10-100x speedups)
-- Covers complete workflow: data loading → preprocessing → training → inference
+- Official NVIDIA resource, production-grade examples
+- 10-100x speedups demonstrated
+- Complete workflow: data loading → preprocessing → training → inference
 - Blackwell architecture optimization patterns
-- Foundation for understanding CUDA-X Data Science stack
+- Foundation for CUDA-X Data Science stack
 
 **Prerequisites:**
-- Basic Python knowledge
-- Familiarity with pandas and scikit-learn (for RAPIDS modules)
-- Access to NVIDIA GPU (DGX Spark ideal, but adaptable to other NVIDIA hardware)
+- Basic Python
+- Familiarity with pandas, scikit-learn
+- NVIDIA GPU access (DGX Spark ideal, adaptable to other NVIDIA hardware)
 
 **Related Tools:**
 - RAPIDS (cuDF, cuML, cuGraph)
@@ -52,107 +52,133 @@ Step-by-step playbooks for setting up and running AI/ML workloads on NVIDIA hard
 
 ---
 
-## Format Guidelines
+## AI Engineering & Production Systems
 
-Each learning resource entry should include:
+### AI Engineering by Chip Huyen
+**Repository:** https://github.com/chiphuyen/aie-book
+**Platform:** Foundation Models & LLM Applications
+**Level:** Intermediate to Advanced
 
-### Required Fields:
-1. **Title/Name** - Clear, descriptive name
-2. **Repository/Link** - Direct URL to resource
-3. **Platform/Framework** - What technology it focuses on
-4. **Level** - Beginner, Intermediate, Advanced, or combination
+**What It Covers:**
+Comprehensive guide to adapting foundation models (LLMs, multimodal) for real-world production applications. O'Reilly Media, 2025.
 
-### Recommended Fields:
-5. **What It Covers** - Brief overview (1-2 sentences)
-6. **Key Learning Areas** - Bulleted list of main topics/skills
-7. **Why Use This** - Value proposition and use cases
-8. **Prerequisites** - Required knowledge or setup
-9. **Related Tools** - Links to other tools in enterprise-ai-tools.md
+**Key Learning Areas:**
+- **Foundation Model Adaptation:**
+  - Application viability assessment
+  - Model selection, fine-tuning decisions
+  - Parameter-efficient fine-tuning
+  - Data quality validation
 
-### Optional Fields:
-10. **Estimated Time** - How long to complete
-11. **Hands-On Projects** - Practical exercises included
-12. **Community** - Link to forums, Discord, Slack
-13. **Certification** - If completion leads to credential
+- **Production LLM Techniques:**
+  - Prompt engineering best practices
+  - RAG strategies
+  - Hallucination detection, mitigation
+  - Agent design, evaluation frameworks
 
----
+- **Performance Optimization:**
+  - Speed optimization for production
+  - Cost reduction strategies
+  - Security considerations for AI apps
+  - Continuous improvement feedback loops
 
-## Categories
+**Why Use This:**
+- Chip Huyen, author of "Designing Machine Learning Systems"
+- Fundamental engineering principles over tool-specific knowledge
+- 11.2k+ GitHub stars, active community
+- Extensively peer-reviewed by industry experts
+- Practical case studies from real implementations
+- Companion materials: study guides, prompt examples
+- Bridges theory and production-ready systems
 
-Learning resources are organized by:
+**Prerequisites:**
+- Foundational technical knowledge (AI/ML engineers, data scientists)
+- Basic ML concepts
+- LLMs/foundation models helpful but not required
 
-1. **Data Ingestion & ETL**
-   - Document processing pipelines
-   - Multi-source data integration
-   - Real-time data streaming
-
-2. **Data Processing & Curation**
-   - Dataset quality improvement
-   - GPU-accelerated analytics
-   - Feature engineering at scale
-
-3. **Distributed Computing**
-   - Ray ecosystem tutorials
-   - Multi-node training
-   - Cluster management
-
-4. **LLM Inference & Serving**
-   - Production inference optimization
-   - Multi-model serving
-   - Latency and throughput tuning
-
-5. **Agentic Workflows**
-   - LangChain/LangGraph examples
-   - Multi-agent orchestration
-   - Human-in-the-loop patterns
-
-6. **Data Privacy & Security**
-   - PII detection and anonymization
-   - Compliance workflows
-   - Secure LLM applications
-
-7. **Application Development**
-   - End-to-end AI application building
-   - Frontend integration
-   - Production deployment
-
-8. **MLOps & Production**
-   - CI/CD for ML
-   - Monitoring and observability
-   - Model versioning and governance
+**Related Tools:**
+- LangChain/LangGraph for agent orchestration
+- RAG frameworks (LlamaIndex, Haystack)
+- LLM providers (OpenAI, Anthropic, Cohere)
+- Evaluation frameworks (Ragas, DeepEval)
+- Prompt management tools (Portkey, Langfuse)
 
 ---
 
-## Contributing New Resources
+## Prompt Engineering & LLM Techniques
 
-When adding new learning paths or examples:
+### Prompt Engineering Guide by DAIR.AI
+**Repository:** https://github.com/dair-ai/Prompt-Engineering-Guide
+**Platform:** Large Language Models (All Major Providers)
+**Level:** Beginner to Advanced
 
-1. **Verify Quality:**
-   - Official or well-maintained repositories preferred
-   - Active community (recent commits, responsive maintainers)
-   - Clear documentation
+**What It Covers:**
+Community-driven guide to prompt engineering for LLMs, fundamentals through cutting-edge research. Active website: [promptingguide.ai](https://www.promptingguide.ai/).
 
-2. **Ensure Relevance:**
-   - Focus on enterprise-scale applications
-   - Production-grade patterns and practices
-   - Avoid toy examples or outdated tutorials
+**Key Learning Areas:**
+- **Fundamentals:**
+  - LLM settings, parameters
+  - Prompt elements, design principles
+  - Zero-shot, few-shot prompting
+  - Context engineering
 
-3. **Check Compatibility:**
-   - Tools should align with enterprise-ai-tools.md
-   - Version compatibility clearly stated
-   - Dependencies documented
+- **Advanced Techniques:**
+  - Chain-of-thought (CoT) prompting
+  - Tree of thoughts, reasoning strategies
+  - ReAct prompting for agents
+  - RAG
+  - Self-consistency, ensemble methods
 
-4. **Structure Consistently:**
-   - Follow the format guidelines above
-   - Use markdown formatting for readability
-   - Include direct, stable URLs
+- **Practical Applications:**
+  - Function calling, tool use
+  - Code generation, debugging
+  - Data synthesis, augmentation
+  - Model-specific guides (ChatGPT, GPT-4, Llama, Mistral, Gemini)
+
+- **Safety & Ethics:**
+  - Adversarial prompting, jailbreaking
+  - Factuality, hallucination mitigation
+  - Bias detection, reduction
+  - Prompt injection defenses
+
+**Why Use This:**
+- 66.3k+ GitHub stars, 193+ contributors
+- 3+ million learners worldwide
+- Multi-format: guides, notebooks, video lectures, research papers
+- Prompt Hub with curated prompts
+- Translated into 13+ languages
+- Active community: Discord, Twitter, YouTube, newsletter
+- Free, constantly updated with latest research
+- Academy courses for structured learning
+
+**Prerequisites:**
+- Basic AI/ML understanding
+- No coding for core concepts
+- Python helpful for notebooks
+
+**Estimated Time:**
+- Core concepts: 2-4 hours
+- Full guide: 10-15 hours
+- Mastery: Ongoing
+
+**Community:**
+- [Discord](https://discord.gg/dair-ai) - Community support
+- [Website](https://www.promptingguide.ai) - Interactive platform
+- [YouTube](https://www.youtube.com/channel/UCyna_OxOWL7IEuOwb7WhmxQ) - Video tutorials
+- [Newsletter](https://newsletter.dair.ai) - Updates, research
+
+**Related Tools:**
+- LLM providers (OpenAI, Anthropic, Cohere, Google)
+- Prompt management (Portkey, Langfuse)
+- LangChain/LangGraph for orchestration
+- Agent frameworks (Vercel AI SDK, LlamaIndex)
+- Evaluation tools (Ragas, DeepEval)
 
 ---
 
 ## Version Information
-- **Last Updated:** 2025-11-09
-- **Total Resources:** 1
-- **Categories Covered:** 1 (GPU-Accelerated Data Processing)
+- **Last Updated:** 2025-11-12
+- **Total Resources:** 3
+- **Categories Covered:** 3 (GPU-Accelerated Data Processing, AI Engineering & Production Systems, Prompt Engineering & LLM Techniques)
 
 ---
 

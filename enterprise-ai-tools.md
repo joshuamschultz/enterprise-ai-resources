@@ -38,13 +38,13 @@
 **⚡ What:** Type-safe data validation for Python with AI agent framework
 
 **🎯 Use When:**
-- Need type safety for LLM outputs with JSON schema enforcement
-- Building production AI apps requiring data integrity and consistency
-- Validating API inputs/outputs across enterprise services
-- Creating structured outputs from unstructured LLM responses
+- Type safety for LLM outputs with JSON schema enforcement
+- Production AI apps requiring data integrity/consistency
+- API input/output validation across enterprise services
+- Structured outputs from unstructured LLM responses
 
 **💪 Why:**
-- 360M+ downloads/month, used by all FAANG companies
+- 360M+ downloads/month, all FAANG companies
 - Model-agnostic: OpenAI, Anthropic, Gemini, Cohere, AWS, Azure, GCP
 - MIT licensed for commercial/enterprise use
 - Reduces runtime errors, streamlines debugging
@@ -61,16 +61,16 @@
 **⚡ What:** Industrial-strength NLP with production-ready pipelines
 
 **🎯 Use When:**
-- Named entity recognition, POS tagging, dependency parsing at scale
+- NER, POS tagging, dependency parsing at scale
 - Preprocessing text for ML/LLM applications
-- Building custom NLP pipelines for domain-specific text
-- Processing large volumes (millions of documents) efficiently
+- Custom NLP pipelines for domain-specific text
+- Large volume processing (millions of documents)
 
 **💪 Why:**
-- C-like speed (Cython core), handles massive text volumes
+- C-like speed (Cython core), handles massive volumes
 - State-of-the-art neural models, 100+ pre-trained pipelines
 - Latest release: Nov 2025, actively maintained
-- Built specifically for production use, not research
+- Built for production, not research
 
 **📊 License:** MIT | **Support:** Community + Commercial custom pipelines
 
@@ -84,14 +84,15 @@
 **⚡ What:** ETL platform transforming unstructured docs → AI-ready data
 
 **🎯 Use When:**
-- Processing 25+ file types (PDFs, Word, HTML, emails, PowerPoints, images)
-- Building RAG applications requiring diverse document ingestion
-- GDPR/HIPAA/SOC 2 compliance needed for document processing
-- High-volume automated pipelines with 50+ source/destination connectors
+- 25+ file types: PDFs, Word, HTML, emails, PowerPoints, images
+- RAG applications requiring diverse document ingestion
+- GDPR/HIPAA/SOC 2 compliance for document processing
+- High-volume pipelines with 50+ source/destination connectors
 
 **💪 Why:**
-- 82% Fortune 1000 adoption, SOC 2 Type 2 / HIPAA / GDPR ready
-- Continuous ingestion with flexible chunking and embedding strategies
+- 82% Fortune 1000 adoption
+- SOC 2 Type 2 / HIPAA / GDPR ready
+- Continuous ingestion with flexible chunking/embedding
 - Pythonic API + managed platform options
 
 **📊 License:** Apache 2.0 | **Support:** Plus + Enterprise tiers
@@ -105,14 +106,14 @@
 
 **🎯 Use When:**
 - High-accuracy parsing for business intelligence
-- Preserving complex elements: tables, equations, code blocks
+- Complex elements: tables, equations, code blocks
 - On-premise deployments with resource constraints
 - Open-source alternative to commercial document AI
 
 **💪 Why:**
-- Powered by DocLayNet (layout) + TableFormer (tables) AI models
+- DocLayNet (layout) + TableFormer (tables) AI models
 - 10k GitHub stars in <1 month, #1 trending Nov 2024
-- Runs efficiently on commodity hardware
+- Efficient on commodity hardware
 - Red Hat RHEL AI support, IBM Granite integration
 
 **📊 License:** MIT | **Support:** IBM + Red Hat RHEL AI
@@ -128,8 +129,8 @@
 
 **🎯 Use When:**
 - Pre-training data prep for foundation models (LLMs, VLMs, multimodal)
-- Large-scale dataset quality improvement and deduplication (100+ PB)
-- Synthetic data generation and filtering pipelines
+- Large-scale dataset quality improvement, deduplication (100+ PB)
+- Synthetic data generation, filtering pipelines
 - Processing speed critical (17x faster vs CPU)
 
 **💪 Why:**
@@ -149,7 +150,7 @@
 **⚡ What:** GPU-accelerated pandas/scikit-learn with zero code changes
 
 **🎯 Use When:**
-- Large-scale data preprocessing and feature engineering
+- Large-scale data preprocessing, feature engineering
 - Real-time analytics requiring sub-second response
 - Cost optimization: replace CPU clusters with smaller GPU clusters
 - EDA on billion-row datasets, graph analytics at scale
@@ -170,10 +171,10 @@
 **⚡ What:** Unified framework for scaling AI/ML from laptop → cluster
 
 **🎯 Use When:**
-- Distributed training of foundation models and neural networks
-- Multi-model serving with dynamic batching and autoscaling
+- Distributed training of foundation models, neural networks
+- Multi-model serving with dynamic batching, autoscaling
 - Hyperparameter optimization (1000s of trials)
-- Any Python workload needing horizontal scaling
+- Python workloads requiring horizontal scaling
 
 **💪 Why:**
 - Powers OpenAI ChatGPT infrastructure
@@ -191,13 +192,13 @@
 ### Microsoft Presidio
 **🔗 Links:** [Website](https://microsoft.github.io/presidio) · [GitHub](https://github.com/microsoft/presidio)
 
-**⚡ What:** PII detection, redaction, and anonymization for text/images
+**⚡ What:** PII detection, redaction, anonymization for text/images
 
 **🎯 Use When:**
 - Protecting data before LLM API calls (prevent data leakage)
 - GDPR/HIPAA/CCPA compliance for data anonymization
 - RAG systems requiring PII removal from documents
-- Real-time data masking in chatbots and agents
+- Real-time data masking in chatbots, agents
 
 **💪 Why:**
 - Two-engine architecture: Analyzer (detect) + Anonymizer (redact/mask/encrypt)
@@ -221,8 +222,8 @@
 **🎯 Use When:**
 - Similarity search on billions of high-dimensional vectors
 - RAG applications requiring fast, scalable vector search
-- Mission-critical AI apps (NVIDIA, Meta, Salesforce use it)
-- Need flexible deployment: Lite (prototyping) → Standalone → Distributed
+- Mission-critical AI apps (NVIDIA, Meta, Salesforce)
+- Flexible deployment: Lite (prototyping) → Standalone → Distributed
 
 **💪 Why:**
 - 5,000+ enterprise users, 35,000 GitHub stars
@@ -241,8 +242,8 @@
 
 **🎯 Use When:**
 - <100M vectors (best TCO at this scale)
-- Unified relational + vector workloads (no separate DB needed)
-- Need PostgreSQL ecosystem: security, backup, replication
+- Unified relational + vector workloads (no separate DB)
+- PostgreSQL ecosystem: security, backup, replication
 - Cloud-managed options: AWS RDS/Aurora, GCP AlloyDB, Azure
 
 **💪 Why:**
@@ -261,17 +262,17 @@
 **⚡ What:** Open-source embedding database built for AI applications
 
 **🎯 Use When:**
-- Building AI-native applications with embeddings-first design
-- Need simple, developer-friendly vector database
+- AI-native applications with embeddings-first design
+- Simple, developer-friendly vector database
 - Prototyping to production with same API
-- Want both in-memory (dev) and persistent (prod) modes
+- Both in-memory (dev), persistent (prod) modes
 
 **💪 Why:**
 - Python-first design with minimal setup (pip install chromadb)
 - Built-in embedding generation with multiple providers
-- Filtering by metadata, document content, and similarity
+- Filtering by metadata, document content, similarity
 - Scales from laptop to distributed cloud deployment
-- LangChain, LlamaIndex, and major framework integrations
+- LangChain, LlamaIndex, major framework integrations
 
 **📊 License:** Apache 2.0 | **Support:** Community + Chroma Cloud (managed)
 
@@ -282,17 +283,17 @@
 ### Voyage AI
 **🔗 Links:** [Website](https://www.voyageai.com) · [Docs](https://docs.voyageai.com) · [API](https://docs.voyageai.com/docs/embeddings)
 
-**⚡ What:** State-of-the-art embedding models for RAG and search
+**⚡ What:** State-of-the-art embedding models for RAG, search
 
 **🎯 Use When:**
-- Need cutting-edge embedding performance (9.74% better than OpenAI)
+- Cutting-edge embedding performance (9.74% better than OpenAI)
 - Processing long documents (32K token context vs OpenAI's 8K)
 - Multilingual retrieval (100+ languages)
 - Cost-sensitive deployments (voyage-3.5-lite)
 
 **💪 Why:**
 - **voyage-3-large:** SOTA across 100 datasets, 8 domains
-- Optimized specifically for RAG and retrieval tasks
+- Optimized specifically for RAG, retrieval tasks
 - Domain-specific models: code, finance, law, multilingual
 - 32K token context window vs competitors' 8K-512 tokens
 - voyage-3.5-lite: Best cost-performance ratio for production
@@ -310,13 +311,13 @@
 
 **🎯 Use When:**
 - Multilingual applications (100+ languages)
-- Processing very long documents (128K tokens = 200 pages)
-- Need 96% embedding compression for cost savings
+- Very long documents (128K tokens = 200 pages)
+- 96% embedding compression for cost savings
 - Regulated industries requiring enterprise compliance
 
 **💪 Why:**
 - **Embed 4:** Multimodal (text + images), 128K context
-- Optimized for agentic search and retrieval
+- Optimized for agentic search, retrieval
 - Outperforms OpenAI/Voyage in many languages
 - Available: Cohere Platform, AWS SageMaker, Azure AI Foundry
 - Strong compliance for finance, healthcare, manufacturing
@@ -337,7 +338,7 @@
 **🎯 Use When:**
 - Boosting RAG retrieval accuracy (15%+ improvement typical)
 - Multi-stage retrieval pipelines (fast retrieval + precise reranking)
-- Need to reduce LLM context window (fewer, better results)
+- Reducing LLM context window (fewer, better results)
 - Multilingual reranking required
 
 **💪 Why:**
@@ -358,12 +359,12 @@
 ### OpenAI
 **🔗 Links:** [Website](https://openai.com) · [API Docs](https://platform.openai.com/docs) · [Pricing](https://openai.com/api/pricing/)
 
-**⚡ What:** GPT-5 and production LLM APIs for enterprise
+**⚡ What:** GPT-5, production LLM APIs for enterprise
 
 **🎯 Use When:**
-- Need cutting-edge reasoning and coding capabilities
-- Building production apps with strict SLAs
-- Require enterprise security (GDPR, CCPA, SOC 2 Type 2)
+- Cutting-edge reasoning, coding capabilities
+- Production apps with strict SLAs
+- Enterprise security (GDPR, CCPA, SOC 2 Type 2)
 - Multi-model routing for cost/quality optimization
 
 **💪 Why:**
@@ -384,8 +385,8 @@
 **⚡ What:** Claude 4 Sonnet/Opus with 1M token context window
 
 **🎯 Use When:**
-- Processing long documents (750k words, 75k lines of code)
-- Need constitutional AI for safer, more aligned outputs
+- Long documents (750k words, 75k lines of code)
+- Constitutional AI for safer, more aligned outputs
 - Financial services (AIG: 5x faster underwriting, 75%→90% accuracy)
 - AWS Bedrock or Google Vertex AI integration
 
@@ -407,14 +408,14 @@
 **⚡ What:** Enterprise AI with Embed 4 multimodal embeddings
 
 **🎯 Use When:**
-- Building RAG/search for regulated industries (finance, healthcare, manufacturing)
-- Need multilingual support (100+ languages)
-- Processing long documents (128k tokens = 200 pages)
+- RAG/search for regulated industries (finance, healthcare, manufacturing)
+- Multilingual support (100+ languages)
+- Long documents (128k tokens = 200 pages)
 - Cost optimization with 96% embedding compression
 
 **💪 Why:**
 - Embed 4: multimodal (text+images), 128k context window
-- Optimized for agentic search and retrieval
+- Optimized for agentic search, retrieval
 - Available: Cohere Platform, AWS SageMaker, Azure AI Foundry
 - Strong enterprise security for regulated sectors
 
@@ -427,17 +428,17 @@
 ### xAI Grok
 **🔗 Links:** [Website](https://x.ai) · [API](https://x.ai/api) · [Docs](https://docs.x.ai)
 
-**⚡ What:** Grok 4 with real-time search and native tool use
+**⚡ What:** Grok 4 with real-time search, native tool use
 
 **🎯 Use When:**
-- Need real-time information from web/X integration
+- Real-time information from web/X integration
 - Enterprise data extraction, programming, text summarization
 - Frontier performance with exceptional token efficiency
 - Cost-sensitive workloads (Grok 4 Fast)
 
 **💪 Why:**
 - Grok 4 Fast: Sept 2025 release, frontier-level performance
-- Native tool use and real-time search built-in
+- Native tool use, real-time search built-in
 - "Most intelligent model in the world" (xAI claim)
 - Enterprise arrangements available with custom quotas
 
@@ -453,10 +454,10 @@
 **⚡ What:** 100k+ open models with unified inference infrastructure
 
 **🎯 Use When:**
-- Need access to open-source models (Llama, Mistral, Falcon, etc.)
-- Building multi-model apps with consistent API
-- Want deployment flexibility: serverless → dedicated endpoints
-- Enterprise Hub for centralized billing and governance
+- Access to open-source models (Llama, Mistral, Falcon, etc.)
+- Multi-model apps with consistent API
+- Deployment flexibility: serverless → dedicated endpoints
+- Enterprise Hub for centralized billing, governance
 
 **💪 Why:**
 - Inference Providers: unified API to world-class inference infrastructure
@@ -479,9 +480,9 @@
 
 **🎯 Use When:**
 - Fine-tuning LLMs on limited GPU resources (even free Colab/Kaggle)
-- Need fast iteration cycles for model customization
+- Fast iteration cycles for model customization
 - Training with long context lengths (4x longer sequences)
-- Cost optimization: reduce training time and GPU requirements
+- Cost optimization: reduce training time, GPU requirements
 
 **💪 Why:**
 - 2-5x faster fine-tuning with 70% less memory usage
@@ -510,7 +511,7 @@
 - PagedAttention algorithm eliminates memory fragmentation
 - Production Stack (Jan 2025): prefix-aware routing, KV-cache sharing, autoscaling
 - llm-d: Kubernetes-native (Red Hat, Google, IBM, NVIDIA, CoreWeave)
-- Support for 100+ model architectures, all accelerators
+- 100+ model architectures, all accelerators
 
 **📊 License:** Apache 2.0 | **Support:** Red Hat OpenShift AI + llm-d consortium
 
@@ -523,9 +524,9 @@
 
 **🎯 Use When:**
 - Deploying AI models across cloud, data center, workstation
-- Need 5-minute deployment with standard APIs
-- Kubernetes scaling and enterprise support required
-- Building agentic AI with guardrails (NeMo Guardrails)
+- 5-minute deployment with standard APIs
+- Kubernetes scaling, enterprise support required
+- Agentic AI with guardrails (NeMo Guardrails)
 
 **💪 Why:**
 - Zero-configuration deployment, cloud-native microservices
@@ -545,17 +546,17 @@
 **⚡ What:** Open-source platform for ML lifecycle management
 
 **🎯 Use When:**
-- Managing LLM fine-tuning experiments and versions
-- Need centralized model registry with staging/production
+- Managing LLM fine-tuning experiments, versions
+- Centralized model registry with staging/production
 - Tracking prompts, parameters, weights, dependencies
-- Enterprise governance and lineage tracking required
+- Enterprise governance, lineage tracking required
 
 **💪 Why:**
 - De facto standard for ML lifecycle (70M+ downloads/month)
 - Model Registry: versioning, stage transitions, annotations, lineage
 - Native LLM support: prompt packaging, parameter tracking, fine-tuned weights
 - Integrates with all major platforms: Databricks, AWS SageMaker, Azure ML
-- RBAC and governance for enterprise compliance
+- RBAC, governance for enterprise compliance
 
 **📊 License:** Apache 2.0 | **Support:** Community + Databricks MLflow (managed)
 
@@ -564,20 +565,20 @@
 ### Weights & Biases (W&B)
 **🔗 Links:** [Website](https://wandb.ai) · [Docs](https://docs.wandb.ai) · [Pricing](https://wandb.ai/site/pricing)
 
-**⚡ What:** MLOps platform for experiment tracking and model management
+**⚡ What:** MLOps platform for experiment tracking, model management
 
 **🎯 Use When:**
 - Large-scale model training with comprehensive tracking
-- Need real-time collaboration and experiment comparison
-- Building LLMOps with prompt versioning and evaluation
-- Want production monitoring and observability
+- Real-time collaboration, experiment comparison
+- LLMOps with prompt versioning, evaluation
+- Production monitoring, observability
 
 **💪 Why:**
 - Real-time experiment tracking with visualizations
 - Prompt versioning, evaluation frameworks, chain monitoring
-- Artifact versioning for datasets, models, and prompts
-- Team collaboration with shared dashboards and reports
-- Production model monitoring and performance tracking
+- Artifact versioning for datasets, models, prompts
+- Team collaboration with shared dashboards, reports
+- Production model monitoring, performance tracking
 
 **💰 Pricing:** Free tier → Teams ($50/user/mo) → Enterprise (custom)
 
@@ -592,15 +593,15 @@
 
 **🎯 Use When:**
 - AWS-native ML infrastructure required
-- Need integrated model deployment pipelines
-- Compliance and approval workflows needed
+- Integrated model deployment pipelines
+- Compliance, approval workflows needed
 - Building on SageMaker training/inference
 
 **💪 Why:**
-- Centralized model catalog with metadata and lineage
+- Centralized model catalog with metadata, lineage
 - Approval workflows for model governance
 - Direct integration with SageMaker endpoints
-- Cross-account model sharing and discovery
+- Cross-account model sharing, discovery
 - Foundation model fine-tuning support (2025)
 
 **📊 License:** Proprietary (AWS) | **Support:** AWS Enterprise Support
@@ -612,13 +613,13 @@
 ### Portkey
 **🔗 Links:** [Website](https://portkey.ai) · [Docs](https://docs.portkey.ai) · [GitHub](https://github.com/Portkey-AI/gateway)
 
-**⚡ What:** Production AI gateway with prompt management and observability
+**⚡ What:** Production AI gateway with prompt management, observability
 
 **🎯 Use When:**
 - Managing 1600+ LLM providers through unified API
-- Need centralized prompt versioning and deployment
+- Centralized prompt versioning, deployment
 - Processing 10B+ monthly LLM requests
-- Require AI gateway with guardrails and routing
+- AI gateway with guardrails, routing
 
 **💪 Why:**
 - **AI Gateway:** Unified access to 1600+ LLMs with load balancing
@@ -636,18 +637,18 @@
 ### Langfuse
 **🔗 Links:** [Website](https://langfuse.com) · [Docs](https://langfuse.com/docs) · [GitHub](https://github.com/langfuse/langfuse)
 
-**⚡ What:** Open-source LLM observability and prompt management
+**⚡ What:** Open-source LLM observability, prompt management
 
 **🎯 Use When:**
-- Need open-source observability platform
-- Tracking prompt chains and agent workflows
-- Real-time monitoring and evaluation
+- Open-source observability platform
+- Tracking prompt chains, agent workflows
+- Real-time monitoring, evaluation
 - Self-hosted deployment required
 
 **💪 Why:**
 - Complete LLM application observability
 - Prompt versioning with performance tracking
-- User analytics and cost tracking
+- User analytics, cost tracking
 - LangChain, LlamaIndex, Vercel AI SDK integrations
 - Self-hosted or cloud deployment options
 
@@ -662,12 +663,12 @@
 ### LangChain Ecosystem
 **🔗 Links:** [LangChain](https://www.langchain.com) · [LangGraph](https://www.langchain.com/langgraph) · [LangSmith](https://www.langchain.com/langsmith)
 
-**⚡ What:** Production framework for LLM apps and agents
+**⚡ What:** Production framework for LLM apps, agents
 
 **🎯 Use When:**
-- Building RAG applications with complex retrieval logic
-- Multi-agent systems requiring orchestration and state sharing
-- Need provider flexibility (swap OpenAI ↔ Anthropic ↔ open-source)
+- RAG applications with complex retrieval logic
+- Multi-agent systems requiring orchestration, state sharing
+- Provider flexibility (swap OpenAI ↔ Anthropic ↔ open-source)
 - Enterprise observability, evaluation, CI/CD required
 - Long-running stateful agents (hours/days/weeks)
 
@@ -689,9 +690,9 @@
 **⚡ What:** TypeScript toolkit for AI-powered frontends
 
 **🎯 Use When:**
-- Building AI chat interfaces with streaming responses
+- AI chat interfaces with streaming responses
 - Next.js applications requiring server-side AI integration
-- Need multi-model support (30+ LLM providers)
+- Multi-model support (30+ LLM providers)
 - Edge runtime deployments for low-latency global inference
 
 **💪 Why:**
@@ -714,15 +715,15 @@
 **⚡ What:** Programmable guardrails for conversational AI safety
 
 **🎯 Use When:**
-- Building production LLM applications requiring safety controls
-- Need topical guardrails (prevent off-topic responses)
-- Preventing hallucinations and unsafe outputs
-- Implementing fact-checking and content moderation
+- Production LLM applications requiring safety controls
+- Topical guardrails (prevent off-topic responses)
+- Preventing hallucinations, unsafe outputs
+- Implementing fact-checking, content moderation
 
 **💪 Why:**
 - Open-source framework from NVIDIA
 - Define guardrails as policies in simple configuration files
-- Input/output rails for request and response filtering
+- Input/output rails for request, response filtering
 - Integrates with LangChain, LlamaIndex, custom applications
 - Part of NVIDIA NeMo ecosystem for enterprise AI
 
@@ -733,16 +734,16 @@
 ### Fiddler Guardrails
 **🔗 Links:** [Website](https://www.fiddler.ai) · [Docs](https://docs.fiddler.ai/docs/guardrails) · [Product](https://www.fiddler.ai/blog/introducing-fiddler-guardrails)
 
-**⚡ What:** Enterprise guardrails for LLM safety and security
+**⚡ What:** Enterprise guardrails for LLM safety, security
 
 **🎯 Use When:**
 - Enterprise-scale protection (5M+ requests/day)
-- Need <100ms latency for production apps
+- <100ms latency for production apps
 - Preventing hallucinations, jailbreaks, prompt injection
-- Compliance with safety and security policies
+- Compliance with safety, security policies
 
 **💪 Why:**
-- Moderates prompts and responses in real-time
+- Moderates prompts, responses in real-time
 - Pre-built detectors: hallucinations, PII, toxicity, bias
 - Custom policy creation for business rules
 - Enterprise scalability out of the box
@@ -762,10 +763,10 @@
 **⚡ What:** Data framework for building LLM applications
 
 **🎯 Use When:**
-- Building RAG applications with complex data sources
-- Need advanced retrieval strategies (hybrid, semantic, keyword)
-- Want modular, composable components for data ingestion
-- Building agents that query structured and unstructured data
+- RAG applications with complex data sources
+- Advanced retrieval strategies (hybrid, semantic, keyword)
+- Modular, composable components for data ingestion
+- Agents that query structured, unstructured data
 
 **💪 Why:**
 - 200+ data connectors (APIs, databases, files, web)
@@ -784,16 +785,16 @@
 **⚡ What:** Open-source NLP framework for production RAG
 
 **🎯 Use When:**
-- Building production RAG pipelines at scale
-- Need flexible pipeline composition
-- Want both retrieval and generation in one framework
-- Enterprise search and question answering required
+- Production RAG pipelines at scale
+- Flexible pipeline composition
+- Both retrieval, generation in one framework
+- Enterprise search, question answering required
 
 **💪 Why:**
 - Production-ready RAG pipelines with 30+ integrations
 - Modular components: retrievers, readers, rankers, generators
-- Support for multiple vector stores and LLM providers
-- Built-in evaluation and monitoring
+- Multiple vector stores, LLM providers
+- Built-in evaluation, monitoring
 - deepset Cloud for managed deployment
 
 **📊 License:** Apache 2.0 | **Support:** Community + deepset Cloud (managed)
@@ -810,9 +811,9 @@
 **🎯 Use When:**
 - Evaluating RAG accuracy before production deployment
 - Continuous monitoring of production RAG (A/B tests, dashboards)
-- Identifying weak points in retrieval or generation stages
+- Identifying weak points in retrieval, generation stages
 - Optimizing retrieval strategies (chunk size, embeddings, reranking)
-- Compliance: ensuring factual accuracy and relevance
+- Compliance: ensuring factual accuracy, relevance
 
 **💪 Why:**
 - **4 Core Metrics:** Faithfulness, Answer Relevancy, Context Precision, Context Recall
@@ -834,17 +835,17 @@
 - Security testing LLM applications for vulnerabilities (bias, PII leakage, harmful content)
 - Evaluating LLMs with 30+ plug-and-use metrics (faithfulness, hallucination, toxicity)
 - Automated adversarial attack simulation (jailbreaking, prompt injection, data extraction)
-- CI/CD integration for regression testing and quality gates
-- OWASP Top 10 for LLMs and NIST AI Risk Management compliance
+- CI/CD integration for regression testing, quality gates
+- OWASP Top 10 for LLMs, NIST AI Risk Management compliance
 
 **💪 Why:**
 - **Red Teaming (DeepTeam):** Detect 40+ vulnerability types, simulate 10+ attack methods, no dataset required
-- **Evaluation Metrics:** 30+ research-backed metrics for end-to-end and component-level testing
+- **Evaluation Metrics:** 30+ research-backed metrics for end-to-end, component-level testing
 - **Confident AI Platform:** Cloud platform for monitoring, tracing, A/B testing, real-time insights
 - Synthetic dataset generation with state-of-the-art evolution techniques
 - Integrates with CI/CD, LangChain, AWS Bedrock, Azure AI Foundry
 - Data residency options: US (North Carolina) or EU (Frankfurt)
-- SOC 2 Type 2 compliant with custom permissions and PII masking
+- SOC 2 Type 2 compliant with custom permissions, PII masking
 
 **⚠️ Note:** DeepTeam (red teaming) dynamically simulates attacks at runtime; DeepEval (evaluation) requires prepared datasets
 
@@ -860,8 +861,8 @@
 **⚡ What:** De facto standard for Kubernetes monitoring (90% CNCF adoption)
 
 **🎯 Use When:**
-- Monitoring Kubernetes clusters and applications at scale
-- Need multi-dimensional time-series metrics with labels
+- Monitoring Kubernetes clusters, applications at scale
+- Multi-dimensional time-series metrics with labels
 - Service discovery for ephemeral workloads
 - Multi-cluster management (Thanos/Mimir/Cortex for 3-300 clusters)
 
@@ -878,11 +879,11 @@
 ### Grafana
 **🔗 Links:** [Website](https://grafana.com) · [Docs](https://grafana.com/docs) · [GitHub](https://github.com/grafana/grafana)
 
-**⚡ What:** Observability platform for visualizations and dashboards
+**⚡ What:** Observability platform for visualizations, dashboards
 
 **🎯 Use When:**
 - Unified observability across metrics, logs, traces, profiles
-- Need dynamic dashboards with observability-as-code (Grafana 12)
+- Dynamic dashboards with observability-as-code (Grafana 12)
 - Multi-data source visualization (Prometheus, Loki, Splunk, Datadog, etc.)
 - AI-powered incident resolution (Grafana Assistant)
 
@@ -902,10 +903,10 @@
 **⚡ What:** Cost-effective log aggregation inspired by Prometheus
 
 **🎯 Use When:**
-- Need cost-effective log aggregation at massive scale
+- Cost-effective log aggregation at massive scale
 - Familiar with Prometheus (uses same labels/service discovery)
 - Kubernetes logs with OpenTelemetry/Grafana Alloy
-- Want horizontal scalability with low-cost object storage
+- Horizontal scalability with low-cost object storage
 
 **💪 Why:**
 - Only indexes metadata (labels), not log contents → huge cost savings
@@ -925,10 +926,10 @@
 **⚡ What:** Managed service for building GenAI applications with foundation models
 
 **🎯 Use When:**
-- Need access to multiple FMs (Anthropic, Meta, Cohere, Mistral, Amazon Titan)
-- Building production AI agents at scale with governance
-- Require enterprise security, compliance, and private endpoints
-- Want unified tool server for multi-agent applications
+- Access to multiple FMs (Anthropic, Meta, Cohere, Mistral, Amazon Titan)
+- Production AI agents at scale with governance
+- Enterprise security, compliance, private endpoints
+- Unified tool server for multi-agent applications
 
 **💪 Why:**
 - **AgentCore (Preview 2025):** Runtime, Memory, Gateway for AI agents
@@ -948,8 +949,8 @@
 **⚡ What:** Enterprise OpenAI models on Azure with data privacy guarantees
 
 **🎯 Use When:**
-- Need OpenAI models (GPT-5, o1, DALL-E, Whisper) with enterprise SLAs
-- Require data residency and compliance (no data leaves Azure)
+- OpenAI models (GPT-5, o1, DALL-E, Whisper) with enterprise SLAs
+- Data residency, compliance (no data leaves Azure)
 - Integration with Fabric, Cosmos DB, Azure AI Search
 - Microsoft partnership extended through 2032
 
@@ -1113,16 +1114,6 @@ Cloud → AWS Bedrock or Azure OpenAI
 
 ---
 
-## 🤝 Contributing
-
-See `.claude/CLAUDE.md` for guidelines on adding new tools to this list.
-
-**Criteria for inclusion:**
-✅ Production-ready and enterprise-proven
-✅ Active maintenance (2025 updates)
-✅ Clear enterprise value proposition
-✅ Official support channels
-
----
-
 **Made with ❤️ for the AI Engineering Community**
+
+See `CLAUDE.md` for guidelines on adding new tools to this list.
