@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.arcade.dev)",
+      "WebFetch(domain:www.comet.com)",
+      "WebFetch(domain:www.mlsysbook.ai)",
+      "WebFetch(domain:academy.langchain.com)",
+      "WebFetch(domain:www.moveworks.com)",
+      "WebFetch(domain:udlbook.github.io)"
     ],
     "deny": [],
     "ask": []

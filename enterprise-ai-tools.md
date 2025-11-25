@@ -2,7 +2,7 @@
 
 > Production-grade tools for building AI systems at enterprise scale
 
-**Last Updated:** 2025-11-10
+**Last Updated:** 2025-11-25
 
 ---
 
@@ -586,6 +586,34 @@
 
 ---
 
+### Comet
+**🔗 Links:** [Website](https://www.comet.com) · [Docs](https://www.comet.com/docs) · [GitHub](https://github.com/comet-ml/comet-ml) · [Pricing](https://www.comet.com/site/pricing/)
+
+**⚡ What:** Enterprise MLOps platform for experiment tracking, model registry, and LLM evaluation
+
+**🎯 Use When:**
+- Full ML lifecycle management from experimentation to production
+- Experiment tracking with minimal code changes
+- LLM evaluation and observability (via Opik)
+- Production model monitoring with custom metrics
+- Regulated industries requiring compliance features
+
+**💪 Why:**
+- **Gartner Cool Vendor:** AI Core Technologies – Scaling AI in the Enterprise
+- Auto-tracks code, hyperparameters, metrics, outputs per experiment
+- Compare 100s of experiments with custom visualizations, parallel coordinates
+- Model registry with versioning, staging, deployment tracking
+- **Opik:** Open-source LLM evaluation and tracing platform
+- Deploy: cloud, VPC, or on-premises
+- SSO, role-based access, advanced security for enterprise
+- Integrates with any ML framework: PyTorch, TensorFlow, scikit-learn, etc.
+
+**💰 Pricing:** Free tier → Teams → Enterprise (unlimited usage, custom)
+
+**📊 License:** Apache 2.0 (Opik) / Proprietary (Platform) | **Support:** Enterprise support + dedicated plans
+
+---
+
 ### AWS SageMaker Model Registry
 **🔗 Links:** [Website](https://aws.amazon.com/sagemaker) · [Docs](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
 
@@ -658,6 +686,62 @@
 
 ---
 
+### PromptLayer
+**🔗 Links:** [Website](https://www.promptlayer.com) · [Docs](https://docs.promptlayer.com) · [Blog](https://blog.promptlayer.com)
+
+**⚡ What:** Prompt management platform with versioning, A/B testing, and LLM observability
+
+**🎯 Use When:**
+- Centralizing prompt management across teams
+- Decoupling prompts from application code
+- A/B testing prompts with user segments
+- Non-technical teams need to edit prompts without engineering releases
+
+**💪 Why:**
+- **Prompt Registry CMS:** Store prompts separate from codebase
+- **Visual No-Code Editor:** Product/marketing teams edit directly
+- **Version Control:** Diff, comment, rollback, publish to prod/dev
+- **Evaluation Pipelines:** Batch testing with golden datasets, AI evaluators
+- **LLM Observability:** Logs all requests, latency, cost, usage tracking
+- **Model-Agnostic:** Works with any LLM provider
+- Setup in 5 minutes, one line of code
+- Jinja2/f-string templating, reusable snippets
+- Compliance-ready audit logs
+
+**💰 Pricing:** Free tier → Pro → Enterprise
+
+**📊 License:** Proprietary | **Support:** Enterprise support available
+
+---
+
+### Promptfoo
+**🔗 Links:** [Website](https://www.promptfoo.dev) · [GitHub](https://github.com/promptfoo/promptfoo) · [Docs](https://www.promptfoo.dev/docs/intro/)
+
+**⚡ What:** Open-source CLI for LLM evaluation, red teaming, and security testing
+
+**🎯 Use When:**
+- Test-driven LLM development
+- Comparing prompts, models, RAG configurations
+- AI red teaming and vulnerability scanning
+- CI/CD integration for prompt testing
+
+**💪 Why:**
+- **20k+ Users:** Most widely adopted open-source LLM eval tool
+- **Security Testing:** Prompt injection, data leakage scanning
+- **50+ Model Support:** OpenAI, Anthropic, Google, Hugging Face, local models
+- **YAML Config:** Declarative test cases, version controllable
+- **CI/CD Ready:** CLI-first workflow, GitHub Actions integration
+- Developer-friendly: fast, live reloads, caching
+- Battle-tested: built for 10M+ user LLM apps
+- Custom probes for application-specific failures
+- Language agnostic (Python, JS, etc.)
+
+**💰 Pricing:** Open-source (free) → Cloud/Enterprise
+
+**📊 License:** MIT | **Support:** Community + Enterprise
+
+---
+
 ## 🔗 Agentic Workflows & Orchestration
 
 ### LangChain Ecosystem
@@ -704,6 +788,85 @@
 **💰 Pricing:** Free tier → Pro → Enterprise with custom DDoS/IP blocking
 
 **📊 License:** Apache 2.0 | **Support:** Vercel Enterprise
+
+---
+
+### AI SDK Tools
+**🔗 Links:** [GitHub](https://github.com/midday-ai/ai-sdk-tools)
+
+**⚡ What:** Production utilities for Vercel AI SDK: state management, debugging, agents, caching, memory
+
+**🎯 Use When:**
+- Building production AI apps with Vercel AI SDK
+- Need chat state management without prop drilling
+- Debugging tool calls and execution flow
+- Multi-agent orchestration with automatic routing
+- Persistent memory across sessions
+
+**💪 Why:**
+- **@ai-sdk-tools/store:** Chat state management
+- **@ai-sdk-tools/devtools:** Debugging and inspection
+- **@ai-sdk-tools/artifacts:** Type-safe streaming to React
+- **@ai-sdk-tools/agents:** Multi-agent orchestration with routing
+- **@ai-sdk-tools/cache:** Universal caching, zero config
+- **@ai-sdk-tools/memory:** Persistent memory, multiple backends
+- 1.9k+ GitHub stars, used by Midday in production
+- TypeScript-first (92.7% TypeScript)
+
+**⚠️ Note:** Active development, pin to specific versions in production
+
+**📊 License:** Open Source | **Support:** Community
+
+---
+
+### Agent2Agent (A2A) Protocol
+**🔗 Links:** [Website](https://a2aprotocol.ai) · [Specification](https://a2a-protocol.org/latest/specification/) · [GitHub](https://github.com/a2aproject/A2A) · [Samples](https://github.com/a2aproject/a2a-samples)
+
+**⚡ What:** Open standard for agent-to-agent communication and interoperability
+
+**🎯 Use When:**
+- Building multi-agent systems with cross-framework interoperability
+- Enabling agents from different vendors/languages to collaborate
+- Production agent ecosystems requiring standardized communication
+- Enterprise deployments needing vendor-neutral agent protocols
+- Task delegation and orchestration across autonomous agents
+
+**💪 Why:**
+- **Vendor Neutral:** Linux Foundation governance (2025)
+- **Industry Backed:** 50+ partners including Google, Microsoft, IBM, Atlassian, Box, Cohere, Intuit, LangChain, MongoDB, PayPal, Salesforce, SAP, ServiceNow, Workday
+- **Capability Discovery:** Agent Cards for advertising agent capabilities (JSON)
+- **Task Management:** Structured lifecycle for immediate or long-running tasks
+- **Secure by Design:** Built-in authentication/authorization (OpenAPI schemes)
+- **Production Ready:** HTTPS transport, JSON-RPC 2.0, enterprise-grade security
+- **Framework Agnostic:** Works with any agent framework or custom implementation
+
+**📊 License:** Apache 2.0 | **Support:** Linux Foundation + Community + Enterprise partners
+
+---
+
+### Arcade.dev
+**🔗 Links:** [Website](https://www.arcade.dev) · [Docs](https://docs.arcade.dev) · [Blog](https://blog.arcade.dev)
+
+**⚡ What:** MCP runtime enabling AI agents to securely authenticate and act across systems
+
+**🎯 Use When:**
+- AI agents need secure OAuth-based access to user services (Gmail, Slack, GitHub, Salesforce)
+- Building MCP-compatible agentic applications requiring enterprise auth
+- Production agent deployments needing monitoring, logging, evaluation
+- Multi-service automation with granular user permissions
+
+**💪 Why:**
+- **URL Elicitation (Nov 2025):** Enterprise-grade MCP authorization co-developed with Anthropic
+- Authentication-first: OAuth tokens never touch the model, security boundaries intact
+- 100+ pre-built agent tools for enterprise services
+- Deploy anywhere: cloud, VPC, on-premises
+- SDK for custom tool creation in minutes
+- Works with any LLM/orchestration framework (LangGraph, LangChain, etc.)
+- $12M funding (March 2025), team from Okta + Redis
+
+**💰 Pricing:** Free tier → Enterprise (custom)
+
+**📊 License:** Proprietary | **Support:** Enterprise support available
 
 ---
 
@@ -983,11 +1146,11 @@
 10. LLM Providers → OpenAI, Claude, Cohere, Grok, Hugging Face
 11. LLM Fine-tuning → Unsloth
 12. LLM Inference → vLLM, NIM, Ray
-13. Model Registry → MLflow, W&B, SageMaker
-14. Prompt Management → Portkey, Langfuse
+13. Model Registry → MLflow, W&B, Comet, SageMaker
+14. Prompt Management → Portkey, Langfuse, PromptLayer, Promptfoo
 15. Guardrails → NeMo Guardrails, Fiddler
 16. RAG Frameworks → LlamaIndex, Haystack
-17. Agent Orchestration → LangChain/LangGraph, Vercel AI SDK
+17. Agent Orchestration → LangChain/LangGraph, Vercel AI SDK, Arcade.dev
 18. RAG Evaluation → Ragas, DeepEval
 19. Monitoring → Prometheus, Grafana, Loki
 20. Cloud Platforms → AWS Bedrock, Azure OpenAI
@@ -1013,9 +1176,9 @@ Prompt Mgmt → Portkey, Langfuse
 ```
 Raw Data → NeMo Curator → RAPIDS (processing) → Ray (distributed training)
 Fine-tune → Unsloth
-Model Registry → MLflow/W&B/SageMaker
+Model Registry → MLflow/W&B/Comet/SageMaker
 Model → vLLM/NIM/Ray (serving) → Production
-Monitor → Prometheus, Grafana
+Monitor → Prometheus, Grafana, Comet
 ```
 
 **Production LLM App:**
@@ -1029,6 +1192,7 @@ LLM Gateway → Portkey
 LLM → OpenAI/Claude/Cohere via vLLM/NIM/Ray
 Guardrails → NeMo Guardrails/Fiddler
 Agent Framework → LangChain/Vercel AI SDK/LlamaIndex
+Agent Auth & Tools → Arcade.dev (MCP runtime)
 Prompt Mgmt → Portkey, Langfuse
 Monitor → Langfuse, Prometheus, Grafana, Loki
 Cloud → AWS Bedrock or Azure OpenAI
@@ -1064,15 +1228,20 @@ Cloud → AWS Bedrock or Azure OpenAI
 | Ray | Apache 2.0 | Anyscale (Azure/AWS managed) |
 | MLflow | Apache 2.0 | Databricks MLflow (managed) |
 | Weights & Biases | Proprietary | Enterprise support |
+| Comet | Apache 2.0 (Opik) / Proprietary | Enterprise support + dedicated plans |
 | AWS SageMaker | Proprietary (AWS) | AWS Enterprise Support |
 | Portkey | Apache 2.0 (gateway) | Enterprise support |
 | Langfuse | MIT | Community + Enterprise |
+| PromptLayer | Proprietary | Enterprise support |
+| Promptfoo | MIT | Community + Enterprise |
 | NeMo Guardrails | Apache 2.0 | NVIDIA AI Enterprise |
 | Fiddler Guardrails | Proprietary | Enterprise support |
 | LlamaIndex | MIT | Community + LlamaCloud |
 | Haystack | Apache 2.0 | Community + deepset Cloud |
 | LangChain | MIT | LangSmith Plus + Enterprise |
 | Vercel AI SDK | Apache 2.0 | Vercel Enterprise |
+| AI SDK Tools | Open Source | Community |
+| Arcade.dev | Proprietary | Enterprise support |
 | Ragas | Apache 2.0 | Enterprise consultation |
 | DeepEval | Apache 2.0 | Confident AI Enterprise + Community |
 | Prometheus | Apache 2.0 | CNCF Community |
@@ -1092,11 +1261,11 @@ Cloud → AWS Bedrock or Azure OpenAI
 - [Voyage AI](https://docs.voyageai.com) · [Cohere Embed](https://docs.cohere.com/docs/embeddings) · [Cohere Rerank](https://docs.cohere.com/docs/reranking)
 - [OpenAI](https://platform.openai.com/docs) · [Claude](https://www.anthropic.com/api) · [Cohere](https://cohere.com/embed) · [Grok](https://docs.x.ai) · [Hugging Face](https://huggingface.co/docs)
 - [Unsloth](https://docs.unsloth.ai) · [vLLM](https://docs.vllm.ai) · [NIM](https://developer.nvidia.com/nim) · [Ray](https://docs.ray.io)
-- [MLflow](https://mlflow.org/docs/latest) · [W&B](https://docs.wandb.ai) · [SageMaker](https://docs.aws.amazon.com/sagemaker)
-- [Portkey](https://docs.portkey.ai) · [Langfuse](https://langfuse.com/docs)
+- [MLflow](https://mlflow.org/docs/latest) · [W&B](https://docs.wandb.ai) · [Comet](https://www.comet.com/docs) · [SageMaker](https://docs.aws.amazon.com/sagemaker)
+- [Portkey](https://docs.portkey.ai) · [Langfuse](https://langfuse.com/docs) · [PromptLayer](https://docs.promptlayer.com) · [Promptfoo](https://www.promptfoo.dev/docs/intro/)
 - [NeMo Guardrails](https://docs.nvidia.com/nemo/guardrails) · [Fiddler](https://docs.fiddler.ai/docs/guardrails)
 - [LlamaIndex](https://docs.llamaindex.ai) · [Haystack](https://docs.haystack.deepset.ai)
-- [LangChain](https://python.langchain.com) · [Vercel AI SDK](https://ai-sdk.dev/docs)
+- [LangChain](https://python.langchain.com) · [Vercel AI SDK](https://ai-sdk.dev/docs) · [Arcade.dev](https://docs.arcade.dev)
 - [Ragas](https://docs.ragas.io) · [DeepEval](https://deepeval.com/docs/getting-started)
 - [Prometheus](https://prometheus.io/docs) · [Grafana](https://grafana.com/docs) · [Loki](https://grafana.com/docs/loki)
 - [AWS Bedrock](https://docs.aws.amazon.com/bedrock) · [Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai)
@@ -1106,9 +1275,9 @@ Cloud → AWS Bedrock or Azure OpenAI
 - [Docling](https://github.com/DS4SD/docling) · [NeMo](https://github.com/NVIDIA/NeMo) · [RAPIDS](https://github.com/rapidsai)
 - [Presidio](https://github.com/microsoft/presidio) · [Milvus](https://github.com/milvus-io/milvus) · [pgvector](https://github.com/pgvector/pgvector) · [Chroma](https://github.com/chroma-core/chroma)
 - [Unsloth](https://github.com/unslothai/unsloth) · [vLLM](https://github.com/vllm-project/vllm) · [Ray](https://github.com/ray-project/ray)
-- [MLflow](https://github.com/mlflow/mlflow) · [Portkey Gateway](https://github.com/Portkey-AI/gateway) · [Langfuse](https://github.com/langfuse/langfuse)
+- [MLflow](https://github.com/mlflow/mlflow) · [Comet](https://github.com/comet-ml/comet-ml) · [Portkey Gateway](https://github.com/Portkey-AI/gateway) · [Langfuse](https://github.com/langfuse/langfuse) · [Promptfoo](https://github.com/promptfoo/promptfoo)
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) · [LlamaIndex](https://github.com/run-llama/llama_index) · [Haystack](https://github.com/deepset-ai/haystack)
-- [LangChain](https://github.com/langchain-ai/langchain) · [Vercel AI SDK](https://github.com/vercel/ai)
+- [LangChain](https://github.com/langchain-ai/langchain) · [Vercel AI SDK](https://github.com/vercel/ai) · [AI SDK Tools](https://github.com/midday-ai/ai-sdk-tools)
 - [Ragas](https://github.com/explodinggradients/ragas) · [DeepEval](https://github.com/confident-ai/deepeval) · [DeepTeam](https://github.com/confident-ai/deepteam)
 - [Prometheus](https://github.com/prometheus/prometheus) · [Grafana](https://github.com/grafana/grafana) · [Loki](https://github.com/grafana/loki)
 

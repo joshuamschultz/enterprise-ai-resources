@@ -187,6 +187,7 @@ A curated collection of 45+ production-grade tools for building enterprise AI sy
 
 - **[LangChain Ecosystem](https://www.langchain.com)** - Production framework for LLM apps, agents
 - **[Vercel AI SDK](https://ai-sdk.dev)** - TypeScript toolkit for AI-powered frontends
+- **[Agent2Agent (A2A) Protocol](https://a2aprotocol.ai)** - Open standard for agent-to-agent communication and interoperability
 
 ---
 
@@ -229,6 +230,7 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 - [GPU-Accelerated Data Processing](#gpu-accelerated-data-processing)
 - [AI Engineering & Production Systems](#ai-engineering--production-systems)
 - [Prompt Engineering & LLM Techniques](#prompt-engineering--llm-techniques)
+- [Agentic Workflows & Multi-Agent Systems](#agentic-workflows--multi-agent-systems)
 
 ---
 
@@ -253,6 +255,14 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 **[View Section →](learning-paths-examples.md#prompt-engineering--llm-techniques)**
 
 - **[Prompt Engineering Guide by DAIR.AI](https://github.com/dair-ai/Prompt-Engineering-Guide)** - Community-driven guide to prompt engineering with 66.3k+ stars, 3M+ learners worldwide
+
+---
+
+## 🤖 Agentic Workflows & Multi-Agent Systems
+
+**[View Section →](learning-paths-examples.md#agentic-workflows--multi-agent-systems)**
+
+- **[Agent2Agent (A2A) Protocol Samples](https://github.com/a2aproject/a2a-samples)** - Official code samples demonstrating agent-to-agent communication with production-grade security patterns from Linux Foundation
 
 ---
 
@@ -300,6 +310,7 @@ Inputs → Pydantic (validation)
        → OpenAI/Claude/Cohere via vLLM/NIM/Ray
        → NeMo Guardrails/Fiddler (safety)
        → LangChain/Vercel AI SDK/LlamaIndex (orchestration)
+       → A2A Protocol (multi-agent communication)
        → Portkey/Langfuse (prompt management)
        → Langfuse/Prometheus/Grafana/Loki (observability)
        → AWS Bedrock or Azure OpenAI (cloud)
@@ -347,10 +358,10 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 
 ## 📊 Stats
 
-- **Tools Documented:** 45+
+- **Tools Documented:** 46+
 - **Tool Categories:** 19
-- **Learning Resources:** 3
-- **Learning Categories:** 3
+- **Learning Resources:** 4
+- **Learning Categories:** 4
 - **Last Updated:** 2025-11-13
 
 ---
