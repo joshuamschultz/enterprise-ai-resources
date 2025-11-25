@@ -2,7 +2,7 @@
 
 > A comprehensive registry of production-grade tools and learning resources for building AI systems at enterprise scale
 
-Last Updated: 2025-11-13
+Last Updated: 2025-11-25
 
 ---
 
@@ -19,7 +19,7 @@ This repository contains two comprehensive resources for enterprise AI developme
 
 **[View Full Tools Registry →](enterprise-ai-tools.md)**
 
-A curated collection of 45+ production-grade tools for building enterprise AI systems.
+A curated collection of 46 production-grade tools for building enterprise AI systems.
 
 ### Categories
 
@@ -150,6 +150,7 @@ A curated collection of 45+ production-grade tools for building enterprise AI sy
 
 - **[MLflow](https://mlflow.org)** - Open-source platform for ML lifecycle management
 - **[Weights & Biases (W&B)](https://wandb.ai)** - MLOps platform for experiment tracking, model management
+- **[Comet](https://www.comet.com)** - Enterprise MLOps platform for experiment tracking, model registry, and LLM evaluation
 - **[AWS SageMaker Model Registry](https://aws.amazon.com/sagemaker)** - Managed ML model catalog for SageMaker
 
 ---
@@ -160,6 +161,8 @@ A curated collection of 45+ production-grade tools for building enterprise AI sy
 
 - **[Portkey](https://portkey.ai)** - Production AI gateway with prompt management, observability
 - **[Langfuse](https://langfuse.com)** - Open-source LLM observability, prompt management
+- **[PromptLayer](https://www.promptlayer.com)** - Prompt management with versioning, A/B testing, and no-code editing
+- **[Promptfoo](https://www.promptfoo.dev)** - Open-source CLI for LLM evaluation, red teaming, and CI/CD testing
 
 ---
 
@@ -187,7 +190,9 @@ A curated collection of 45+ production-grade tools for building enterprise AI sy
 
 - **[LangChain Ecosystem](https://www.langchain.com)** - Production framework for LLM apps, agents
 - **[Vercel AI SDK](https://ai-sdk.dev)** - TypeScript toolkit for AI-powered frontends
+- **[AI SDK Tools](https://github.com/midday-ai/ai-sdk-tools)** - Production utilities for Vercel AI SDK: state, debugging, agents, caching, memory
 - **[Agent2Agent (A2A) Protocol](https://a2aprotocol.ai)** - Open standard for agent-to-agent communication and interoperability
+- **[Arcade.dev](https://www.arcade.dev)** - MCP runtime enabling AI agents to securely authenticate and act across systems
 
 ---
 
@@ -228,7 +233,9 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 ### Categories
 
 - [GPU-Accelerated Data Processing](#gpu-accelerated-data-processing)
+- [ML Systems Engineering](#ml-systems-engineering)
 - [AI Engineering & Production Systems](#ai-engineering--production-systems)
+- [LLM Pre-training & Fine-tuning](#llm-pre-training--fine-tuning)
 - [Prompt Engineering & LLM Techniques](#prompt-engineering--llm-techniques)
 - [Agentic Workflows & Multi-Agent Systems](#agentic-workflows--multi-agent-systems)
 
@@ -242,11 +249,28 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 
 ---
 
+## 📐 ML Systems Engineering
+
+**[View Section →](learning-paths-examples.md#ml-systems-engineering)**
+
+- **[Machine Learning Systems Book](https://www.mlsysbook.ai/)** - Harvard CS249r textbook on building ML systems from holistic engineering perspective (MIT Press 2026)
+- **[Understanding Deep Learning](https://udlbook.github.io/udlbook/)** - Comprehensive deep learning textbook by Simon J.D. Prince covering fundamentals through transformers and diffusion models (MIT Press 2024)
+
+---
+
 ## 🏗️ AI Engineering & Production Systems
 
 **[View Section →](learning-paths-examples.md#ai-engineering--production-systems)**
 
 - **[AI Engineering by Chip Huyen](https://github.com/chiphuyen/aie-book)** - Comprehensive guide to adapting foundation models for production applications (O'Reilly Media, 2025)
+
+---
+
+## 🔬 LLM Pre-training & Fine-tuning
+
+**[View Section →](learning-paths-examples.md#llm-pre-training--fine-tuning)**
+
+- **[The Smol Training Playbook](https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook)** - Hugging Face's 200+ page guide to building SmolLM3, covering pre-training, post-training, and infrastructure
 
 ---
 
@@ -262,6 +286,8 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 
 **[View Section →](learning-paths-examples.md#agentic-workflows--multi-agent-systems)**
 
+- **[LangChain Academy](https://academy.langchain.com/collections)** - Official free courses on agent development, LangGraph workflows, and production AI applications
+- **[Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns)** - Hands-on guide to building intelligent agentic systems with Jupyter notebooks by Antonio Gulli
 - **[Agent2Agent (A2A) Protocol Samples](https://github.com/a2aproject/a2a-samples)** - Official code samples demonstrating agent-to-agent communication with production-grade security patterns from Linux Foundation
 
 ---
@@ -282,6 +308,7 @@ Documents → Unstructured/Docling
          → vLLM/NIM/Ray (inference)
          → NeMo Guardrails/Fiddler (safety)
          → Ragas/DeepEval (evaluation)
+         → DeepEval/DeepTeam (red teaming)
          → Langfuse/Prometheus/Grafana (monitoring)
 ```
 
@@ -292,9 +319,9 @@ Raw Data → NeMo Curator (curation)
         → RAPIDS (GPU processing)
         → Ray (distributed training)
         → Unsloth (fine-tuning)
-        → MLflow/W&B/SageMaker (registry)
+        → MLflow/W&B/Comet/SageMaker (registry)
         → vLLM/NIM/Ray (serving)
-        → Prometheus/Grafana (monitoring)
+        → Prometheus/Grafana/Comet (monitoring)
 ```
 
 ### Production LLM Application
@@ -310,8 +337,9 @@ Inputs → Pydantic (validation)
        → OpenAI/Claude/Cohere via vLLM/NIM/Ray
        → NeMo Guardrails/Fiddler (safety)
        → LangChain/Vercel AI SDK/LlamaIndex (orchestration)
+       → Arcade.dev (agent auth & tools)
        → A2A Protocol (multi-agent communication)
-       → Portkey/Langfuse (prompt management)
+       → Portkey/Langfuse/PromptLayer (prompt management)
        → Langfuse/Prometheus/Grafana/Loki (observability)
        → AWS Bedrock or Azure OpenAI (cloud)
 ```
@@ -349,8 +377,8 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 ```
 .
 ├── README.md                    # This file - comprehensive index
-├── enterprise-ai-tools.md       # 45+ production-grade AI tools
-├── learning-paths-examples.md   # Tutorials, playbooks, examples
+├── enterprise-ai-tools.md       # 46 production-grade AI tools
+├── learning-paths-examples.md   # 11 tutorials, playbooks, examples
 └── CLAUDE.md                    # Contribution & maintenance guidelines
 ```
 
@@ -358,11 +386,11 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 
 ## 📊 Stats
 
-- **Tools Documented:** 46+
+- **Tools Documented:** 46
 - **Tool Categories:** 19
-- **Learning Resources:** 4
-- **Learning Categories:** 4
-- **Last Updated:** 2025-11-13
+- **Learning Resources:** 11
+- **Learning Categories:** 6
+- **Last Updated:** 2025-11-25
 
 ---
 
