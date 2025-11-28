@@ -8,10 +8,12 @@ Last Updated: 2025-11-25
 
 ## 📚 What's Inside
 
-This repository contains two comprehensive resources for enterprise AI development:
+This repository contains comprehensive resources for enterprise AI development:
 
 1. **[Enterprise AI Tools Registry](enterprise-ai-tools.md)** - Production-grade tools for AI/ML at scale
 2. **[Learning Paths & Examples](learning-paths-examples.md)** - Tutorials, playbooks, and hands-on resources
+3. **[AI Products & Platforms](ai-products.md)** - Enterprise AI products for knowledge management and workflow automation
+4. **[AI Resources & Development Tools](ai-resources.md)** - Prompt libraries, code repositories, frameworks, and developer resources
 
 ---
 
@@ -346,6 +348,44 @@ Inputs → Pydantic (validation)
 
 ---
 
+## 💼 AI Products & Platforms
+
+**[View Full AI Products Registry →](ai-products.md)**
+
+Enterprise AI products for knowledge management and workflow automation.
+
+### Featured Products
+
+- **[Moveworks](https://www.moveworks.com)** - AI assistant platform with automated knowledge article generation
+- **[Pryon](https://www.pryon.com)** - Enterprise AI memory layer with RAG Suite (90%+ retrieval accuracy)
+- **[The Drive AI](https://thedrive.ai)** - Agentic workspace transforming files into intelligent AI agents
+- **[Tines](https://www.tines.com)** - Intelligent workflow automation platform with AI agents for security operations
+
+---
+
+## 🧰 AI Resources & Development Tools
+
+**[View Full AI Resources Registry →](ai-resources.md)**
+
+Curated prompt libraries, code repositories, agent frameworks, and developer resources for building AI applications.
+
+### Featured Resources
+
+**Prompt Libraries:**
+- **[DAIR.AI Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)** - 50k+ stars, 3M+ learners, comprehensive guide
+- **[Anthropic Claude Library](https://docs.anthropic.com/claude/docs/intro-to-prompting)** - Official prompts and system prompts
+- **[OpenAI Cookbook](https://cookbook.openai.com/)** - Production patterns and specialized guides
+
+**Code Repositories:**
+- **[Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)** - 12.1k stars, workflows, skills, slash commands
+- **[Vercel AI SDK Templates](https://vercel.com/templates/ai)** - 32+ production-ready templates
+
+**Agent Frameworks:**
+- **[LangGraph](https://github.com/langchain-ai/langgraph)** - Industry-standard stateful multi-agent orchestration
+- **[CrewAI](https://github.com/crewAIInc/crewAI)** - 100k+ certified developers, role-based agent teams
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guidelines on:
@@ -376,21 +416,25 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 
 ```
 .
-├── README.md                    # This file - comprehensive index
-├── enterprise-ai-tools.md       # 46 production-grade AI tools
-├── learning-paths-examples.md   # 11 tutorials, playbooks, examples
-└── CLAUDE.md                    # Contribution & maintenance guidelines
+├── README.md                      # This file - comprehensive index
+├── enterprise-ai-tools.md         # 46 production-grade AI tools
+├── learning-paths-examples.md     # 11 tutorials, playbooks, examples
+├── ai-products.md                 # Enterprise AI products (4 platforms)
+├── ai-resources.md                # AI resources & development tools
+└── CLAUDE.md                      # Contribution & maintenance guidelines
 ```
 
 ---
 
 ## 📊 Stats
 
-- **Tools Documented:** 46
+- **Enterprise AI Tools:** 46
 - **Tool Categories:** 19
 - **Learning Resources:** 11
 - **Learning Categories:** 6
-- **Last Updated:** 2025-11-25
+- **AI Products:** 4
+- **AI Dev Resources:** 15+ (prompts, repos, frameworks)
+- **Last Updated:** 2025-11-28
 
 ---
 

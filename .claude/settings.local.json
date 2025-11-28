@@ -8,7 +8,10 @@
       "WebFetch(domain:www.mlsysbook.ai)",
       "WebFetch(domain:academy.langchain.com)",
       "WebFetch(domain:www.moveworks.com)",
-      "WebFetch(domain:udlbook.github.io)"
+      "WebFetch(domain:udlbook.github.io)",
+      "WebFetch(domain:gamma.app)",
+      "WebFetch(domain:cookbook.openai.com)",
+      "WebFetch(domain:vercel.com)"
     ],
     "deny": [],
     "ask": []
