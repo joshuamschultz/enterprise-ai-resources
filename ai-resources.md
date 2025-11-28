@@ -217,6 +217,89 @@
 
 ---
 
+#### Awesome Claude Skills
+**🔗 Links:** [GitHub](https://github.com/ComposioHQ/awesome-claude-skills)
+
+**⚡ What:** Curated list of practical Claude Skills for productivity across Claude.ai, Claude Code, and Claude API (5.6k stars)
+
+**🎯 Use When:**
+- Need repeatable, standardized task execution
+- Building custom workflows for Claude
+- Want pre-built skills for common tasks
+- Integrating with 500+ apps via Composio
+- Teaching Claude domain-specific tasks
+
+**💪 Why:**
+- **5,600+ GitHub Stars:** Community-validated resource
+- **9 Skill Categories:** Document processing, development, data analysis, business, communication, creative, productivity, collaboration, security
+- **Cross-Platform:** Works across Claude.ai, Claude Code, and API
+- **Integration Ready:** 500+ app integrations via Composio
+- **Practical Focus:** Real-world productivity enhancements
+- **Customizable Workflows:** Standardized task patterns
+
+**Categories:**
+- **Document Processing:** DOCX, PDF, PPTX, XLSX
+- **Development & Code:** MCP builders, testing frameworks
+- **Data & Analysis:** CSV summarization, analytics
+- **Business & Marketing:** Lead research, competitive analysis
+- **Communication:** Content research, transcription
+- **Creative & Media:** Design, video, GIF creation
+- **Productivity:** File organization, invoice management
+- **Collaboration:** Git operations, code review
+- **Security:** Forensics, threat hunting
+
+**📊 License:** Apache 2.0 | **Access:** Free
+
+---
+
+### Personal AI Infrastructure (PAI)
+**🔗 Links:** [GitHub](https://github.com/danielmiessler/Personal_AI_Infrastructure) · [Website](https://pai.danielmiessler.com)
+
+**⚡ What:** Open-source personal AI infrastructure for orchestrating life and work (1.1k stars)
+
+**🎯 Use When:**
+- Building personalized AI operating systems
+- Need domain-specific AI automation
+- Want event-driven AI workflows
+- Implementing research and intelligence gathering
+- Creating productivity enhancement systems
+- Building security testing workflows
+
+**💪 Why:**
+- **Skills Architecture:** Self-contained AI capabilities with routing and workflows
+- **Agents System:** Specialized AI personalities for different tasks
+- **Event-Driven Hooks:** Automation with voice feedback (ElevenLabs TTS)
+- **History System (UOCS):** Automatic session documentation
+- **Progressive Web Scraping:** Four-tier fallback (WebFetch → cURL → Playwright → Bright Data MCP)
+- **Fabric Integration:** Access to 242+ AI patterns
+- **Voice Feedback:** Real-time audio notifications
+- **Research Workflows:** Multi-source research capabilities
+- **Modern Stack:** Bun runtime, TypeScript, Vitest testing
+- **Active Development:** v0.7.0 (Nov 2025), 1.1k stars, 236 forks
+
+**Getting Started:**
+```bash
+# Install Bun (not Node.js)
+curl -fsSL https://bun.sh/install | bash
+
+# Clone and setup
+git clone https://github.com/danielmiessler/Personal_AI_Infrastructure.git
+cd Personal_AI_Infrastructure
+bun install
+```
+
+**Use Cases:**
+- Personalized AI operating systems
+- Domain-specific automation
+- Business intelligence and analysis
+- Research and information gathering
+- Security testing workflows
+- Productivity enhancement
+
+**📊 License:** MIT | **Access:** Free
+
+---
+
 ### Vercel AI SDK Templates
 
 **🔗 Links:** [Templates](https://vercel.com/templates/ai) · [GitHub](https://github.com/vercel/ai) · [Docs](https://ai-sdk.dev/docs/introduction) · [Academy Course](https://vercel.com/academy/ai-sdk)
@@ -460,6 +543,7 @@ Research-Backed → DAIR.AI (papers, notebooks, courses)
 **Building AI Applications:**
 ```
 Next.js/React → Vercel AI SDK Templates (32+ templates)
+Personal AI Infrastructure → PAI (orchestration, event-driven workflows)
 Multi-Agent → LangGraph (stateful, production-ready)
 Role-Based Agents → CrewAI (100k+ certified devs)
 RAG Systems → LlamaIndex, LangChain
@@ -470,6 +554,7 @@ Microsoft Stack → Semantic Kernel, Azure AI Templates
 ```
 Official → anthropics/claude-code
 Community → awesome-claude-code (12.1k stars)
+Skills Library → awesome-claude-skills (5.6k stars, 500+ app integrations)
 Workflows → claude-code-guide, ClaudeLog
 Skills → Agent skills, slash commands, CLAUDE.md configs
 ```
@@ -585,7 +670,9 @@ Use Case → DAIR.AI Guide (techniques)
 - [God of Prompt Library](https://www.godofprompt.ai/prompt-library)
 - [Hugging Face Datasets](https://huggingface.co/datasets)
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
+- [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)
 - [Claude Code Guide](https://github.com/Cranot/claude-code-guide)
+- [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
 - [Vercel AI SDK](https://github.com/vercel/ai)
 - [Vercel AI Templates](https://vercel.com/templates/ai)
 - [LangGraph GitHub](https://github.com/langchain-ai/langgraph)

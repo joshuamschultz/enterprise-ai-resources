@@ -378,6 +378,8 @@ Curated prompt libraries, code repositories, agent frameworks, and developer res
 
 **Code Repositories:**
 - **[Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)** - 12.1k stars, workflows, skills, slash commands
+- **[Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)** - 5.6k stars, 9 skill categories, 500+ app integrations
+- **[Personal AI Infrastructure (PAI)](https://github.com/danielmiessler/Personal_AI_Infrastructure)** - 1.1k stars, orchestration framework with event-driven workflows
 - **[Vercel AI SDK Templates](https://vercel.com/templates/ai)** - 32+ production-ready templates
 
 **Agent Frameworks:**
@@ -433,7 +435,7 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 - **Learning Resources:** 11
 - **Learning Categories:** 6
 - **AI Products:** 4
-- **AI Dev Resources:** 15+ (prompts, repos, frameworks)
+- **AI Dev Resources:** 17+ (prompts, repos, frameworks)
 - **Last Updated:** 2025-11-28
 
 ---
