@@ -2,7 +2,7 @@
 
 > Production-grade tools for building AI systems at enterprise scale
 
-**Last Updated:** 2025-11-25
+**Last Updated:** 2025-11-30
 
 ---
 
@@ -23,6 +23,7 @@
 - [Prompt Management & LLMOps](#-prompt-management--llmops)
 - [LLM Security & Guardrails](#-llm-security--guardrails)
 - [RAG Frameworks](#-rag-frameworks)
+- [Application Development](#-application-development)
 - [Agentic Workflows & Orchestration](#-agentic-workflows--orchestration)
 - [RAG Evaluation & Testing](#-rag-evaluation--testing)
 - [Observability & Monitoring](#-observability--monitoring)
@@ -77,6 +78,60 @@
 ---
 
 ## 📄 Document Ingestion & ETL
+
+### Dagster
+**🔗 Links:** [Website](https://dagster.io/) · [GitHub](https://github.com/dagster-io/dagster) · [Docs](https://docs.dagster.io/)
+
+**⚡ What:** Modern data orchestration platform for AI/ML pipelines and data assets
+
+**🎯 Use When:**
+- Orchestrating end-to-end AI/ML pipelines (data ingestion → model training → deployment)
+- Building reliable data pipelines feeding AI applications with lineage tracking
+- Managing complex dependencies across data warehouses, ML models, dbt, APIs
+- Multi-tenant production deployments requiring branch deployments, CI/CD
+- Monitoring data quality, pipeline health, and costs in real-time
+
+**💪 Why:**
+- **11,000+ GitHub stars**, production-ready orchestration platform
+- **AI-Native:** Compass AI analyst for Slack, MCP server for AI-assisted workflows
+- **Asset-Centric:** Track data assets with complete column-level lineage across entire lifecycle
+- **Built-in Quality:** Monitoring, quality checks, retry logic, freshness tracking prevent outages
+- **Production Scale:** Dagster+ Pro with unified lineage, cost monitoring, real-time dashboards
+- **Multi-Environment:** Develop locally, deploy to Docker, Kubernetes, or Dagster Cloud
+- **Branch Deployments:** Test changes without impacting production or overwriting staging
+- **Enterprise Ready:** RBAC, SOC 2, SCIM, SSO, secrets management
+- **AI/ML Focused:** Purpose-built for ML retraining, feature engineering, model monitoring
+
+**📊 License:** Apache 2.0 | **Support:** Community + Dagster+ Pro/Enterprise
+
+---
+
+### dbt (Data Build Tool)
+**🔗 Links:** [Website](https://www.getdbt.com/) · [GitHub](https://github.com/dbt-labs/dbt-core) · [Docs](https://docs.getdbt.com/)
+
+**⚡ What:** Analytics engineering platform for data transformation with SQL and Python
+
+**🎯 Use When:**
+- Transforming raw data into AI-ready analytics tables, features for ML models
+- Version-controlled SQL transformations with testing, documentation built-in
+- Analytics engineering at scale (1,500+ enterprise customers including JetBlue, NASDAQ)
+- Building metrics layers, semantic layers for consistent business definitions
+- Integrating with data warehouses (Snowflake, BigQuery, Redshift, Databricks)
+
+**💪 Why:**
+- **10,800+ GitHub stars**, de facto standard for analytics engineering
+- **70% of analytics professionals use AI** to assist in dbt code development (2025 survey)
+- **100x faster parsing** in dbt Core v1.0 for large-scale enterprise deployments
+- **dbt Cloud:** Managed solution with IDE, scheduling, CI/CD, observability
+- **Semantic Layer:** MetricFlow compiles metric definitions into reusable SQL (Enterprise+)
+- **Data Quality:** Built-in testing framework prevents bad data from reaching AI models
+- **Governance Ready:** SOC 2, HIPAA, GDPR compliance features
+- **Ecosystem:** 1,000+ packages, integrations with Dagster, Airflow, Fivetran, Census
+- **AI Integration:** 80% of data practitioners use AI in dbt workflows
+
+**📊 License:** Apache 2.0 | **Support:** Community + dbt Cloud (Starter/Enterprise/Enterprise+)
+
+---
 
 ### Unstructured.io
 **🔗 Links:** [Website](https://unstructured.io) · [Docs](https://docs.unstructured.io) · [GitHub](https://github.com/Unstructured-IO/unstructured)
@@ -143,6 +198,33 @@
 ---
 
 ## 🔧 Distributed Computing & Processing
+
+### Polars
+**🔗 Links:** [Website](https://pola.rs/) · [GitHub](https://github.com/pola-rs/polars) · [Docs](https://docs.pola.rs/)
+
+**⚡ What:** Blazing-fast DataFrame library written in Rust for Python/Node.js
+
+**🎯 Use When:**
+- High-performance data processing on single machines (30x faster than pandas)
+- Memory-constrained environments requiring efficient processing
+- Real-time data transformations for AI/ML feature engineering
+- Scaling from laptop to production without rewriting code
+- Parallel processing with lazy evaluation and query optimization
+
+**💪 Why:**
+- **29,000+ GitHub stars**, fastest single-machine DataFrame library
+- **30x faster than pandas**, order of magnitude faster than Dask/PySpark
+- **Rust-Powered:** Memory safety, SIMD vectorization, parallel execution
+- **$21M Series A (Sept 2025):** Accel-backed enterprise push with Polars Cloud
+- **Streaming Engine:** 3-7x faster than in-memory, handles datasets larger than RAM
+- **Lazy Evaluation:** Query optimizer automatically parallelizes and optimizes operations
+- **Polars Cloud (AWS):** Fully managed, distributed processing (low-latency at scale)
+- **API Consistency:** Same code runs locally and in cloud, Python/Rust/Node.js support
+- **Production Ready:** Laptop → production without switching tools or rewriting pipelines
+
+**📊 License:** MIT | **Support:** Community + Polars Cloud (managed, enterprise)
+
+---
 
 ### NVIDIA RAPIDS
 **🔗 Links:** [Website](https://rapids.ai) · [Docs](https://docs.rapids.ai) · [GitHub](https://github.com/rapidsai)
@@ -742,6 +824,65 @@
 
 ---
 
+## 🎨 Application Development
+
+### Open WebUI
+**🔗 Links:** [Website](https://openwebui.com/) · [GitHub](https://github.com/open-webui/open-webui) · [Docs](https://docs.openwebui.com/)
+
+**⚡ What:** User-friendly AI interface supporting multiple LLM providers with enterprise features
+
+**🎯 Use When:**
+- Building AI chat interfaces with multiple LLM backend support (Ollama, OpenAI, Anthropic, etc.)
+- Deploying self-hosted AI platforms for enterprise with air-gapped requirements
+- Creating customizable AI assistants with function calling, RAG, and voice/video
+- Requiring RBAC, SSO, SCIM provisioning for enterprise user management
+- Horizontal scaling with multi-worker, multi-node deployments
+
+**💪 Why:**
+- **20,000+ GitHub stars**, vibrant open-source community
+- **Enterprise Features:** On-premise/air-gapped deployments, RBAC, SSO (LDAP, SAML), SCIM 2.0 provisioning
+- **Multi-LLM Support:** Ollama, OpenAI, Anthropic, Google, AWS Bedrock, Azure, local models
+- **Production-Ready:** OpenTelemetry observability, Redis-backed sessions, WebSocket support for load balancers
+- **Cloud Storage Backend:** S3, GCS, Azure Blob for stateless instances, high availability
+- **Voice/Video:** Hands-free calling with Whisper STT, multiple TTS engines (Azure, ElevenLabs, OpenAI)
+- **Python Function Calling:** Built-in code editor, BYOF (Bring Your Own Function)
+- **RAG Built-in:** Local RAG integration, web browsing, persistent key-value storage
+- **Enterprise Support:** 24/7 priority SLA, dedicated account manager, custom feature development
+- **White-Label Ready:** Custom theming, branding for enterprise deployments
+
+**📊 License:** MIT | **Support:** Community + Enterprise (24/7 SLA, LTS versions)
+
+---
+
+### shadcn/ui
+**🔗 Links:** [Website](https://ui.shadcn.com/) · [GitHub](https://github.com/shadcn-ui/ui) · [Docs](https://ui.shadcn.com/docs)
+
+**⚡ What:** Accessible, customizable UI component system built on Radix UI and Tailwind CSS
+
+**🎯 Use When:**
+- Building modern React/Next.js AI application frontends
+- Need full code ownership without external dependency lock-in
+- Accessibility-first design (WCAG compliance) required
+- AI-friendly component code for LLM-assisted development
+- Enterprise SaaS, admin dashboards, data visualization interfaces
+- Production-ready components with minimal setup
+
+**💪 Why:**
+- **Code Ownership:** Components copied into your codebase, full control and customization
+- **Not a Library:** Builds *your* component library, no npm package dependencies
+- **Accessibility-First:** Built on Radix UI primitives (keyboard nav, ARIA, focus management, screen readers)
+- **Enterprise Adoption:** Trusted by OpenAI, Adobe, Sonos, and 1000s of production apps
+- **React 19 + Tailwind v4:** Full compatibility with latest frameworks (Feb 2025)
+- **AI-Optimized:** Open code with consistent API enables LLM code generation, understanding, improvements
+- **Production Ready:** Polished components with accessibility, responsiveness out-of-the-box
+- **Flexible Integration:** Works with Next.js, Remix, Vite, Astro, Laravel, Gatsby
+- **Composition-First:** Common, composable interface across all components
+- **Active Development:** Backed by Vercel, continuous updates and community contributions
+
+**📊 License:** MIT | **Support:** Community + Vercel backing
+
+---
+
 ## 🔗 Agentic Workflows & Orchestration
 
 ### LangChain Ecosystem
@@ -1136,9 +1277,9 @@
 ```
 1. Data Validation → Pydantic
 2. Text Processing → spaCy
-3. Document Ingestion → Unstructured.io, Docling
+3. Document Ingestion → Dagster, dbt, Unstructured.io, Docling
 4. Data Curation → NeMo Curator
-5. Distributed Processing → RAPIDS, Ray
+5. Distributed Processing → Polars, RAPIDS, Ray
 6. Privacy/PII Removal → Presidio
 7. Vector Storage → Milvus, PostgreSQL+pgvector, Chroma
 8. Embeddings → Voyage AI, Cohere Embed
@@ -1150,21 +1291,24 @@
 14. Prompt Management → Portkey, Langfuse, PromptLayer, Promptfoo
 15. Guardrails → NeMo Guardrails, Fiddler
 16. RAG Frameworks → LlamaIndex, Haystack
-17. Agent Orchestration → LangChain/LangGraph, Vercel AI SDK, Arcade.dev
-18. RAG Evaluation → Ragas, DeepEval
-19. Monitoring → Prometheus, Grafana, Loki
-20. Cloud Platforms → AWS Bedrock, Azure OpenAI
+17. Application Development → Open WebUI, shadcn/ui
+18. Agent Orchestration → LangChain/LangGraph, Vercel AI SDK, Arcade.dev
+19. RAG Evaluation → Ragas, DeepEval
+20. Monitoring → Prometheus, Grafana, Loki
+21. Cloud Platforms → AWS Bedrock, Azure OpenAI
 ```
 
 ### By Use Case
 
 **Building RAG Application:**
 ```
-Documents → Unstructured/Docling → Presidio → Chroma/Milvus/pgvector
+ETL → Dagster, dbt → Documents → Unstructured/Docling → Presidio → Chroma/Milvus/pgvector
+Data Processing → Polars, RAPIDS
 Embeddings → Voyage AI/Cohere Embed
 Retrieval → Vector Search → Cohere Rerank
 RAG Framework → LlamaIndex/Haystack
 Query → LangChain/Vercel AI SDK → vLLM/NIM/Ray → Response
+UI → Open WebUI, shadcn/ui
 Guardrails → NeMo Guardrails/Fiddler
 Evaluate → Ragas, DeepEval
 Red Team → DeepEval/DeepTeam
@@ -1174,7 +1318,7 @@ Prompt Mgmt → Portkey, Langfuse
 
 **Fine-tuning & Serving Foundation Model:**
 ```
-Raw Data → NeMo Curator → RAPIDS (processing) → Ray (distributed training)
+Raw Data → Dagster/dbt (orchestration) → NeMo Curator → Polars/RAPIDS (processing) → Ray (distributed training)
 Fine-tune → Unsloth
 Model Registry → MLflow/W&B/Comet/SageMaker
 Model → vLLM/NIM/Ray (serving) → Production
@@ -1183,8 +1327,9 @@ Monitor → Prometheus, Grafana, Comet
 
 **Production LLM App:**
 ```
+Data Pipelines → Dagster/dbt orchestration
 Inputs → Pydantic validation → spaCy preprocessing
-Distributed Processing → RAPIDS, Ray
+Distributed Processing → Polars, RAPIDS, Ray
 Embeddings → Voyage AI/Cohere Embed
 Vector Search → Milvus/pgvector/Chroma
 Reranking → Cohere Rerank
@@ -1193,6 +1338,7 @@ LLM → OpenAI/Claude/Cohere via vLLM/NIM/Ray
 Guardrails → NeMo Guardrails/Fiddler
 Agent Framework → LangChain/Vercel AI SDK/LlamaIndex
 Agent Auth & Tools → Arcade.dev (MCP runtime)
+UI → Open WebUI, shadcn/ui
 Prompt Mgmt → Portkey, Langfuse
 Monitor → Langfuse, Prometheus, Grafana, Loki
 Cloud → AWS Bedrock or Azure OpenAI
@@ -1206,9 +1352,12 @@ Cloud → AWS Bedrock or Azure OpenAI
 |------|---------|-------------------|
 | Pydantic | MIT | Community + Consulting |
 | spaCy | MIT | Community + Commercial pipelines |
+| Dagster | Apache 2.0 | Community + Dagster+ Pro/Enterprise |
+| dbt | Apache 2.0 | Community + dbt Cloud (Starter/Enterprise/Enterprise+) |
 | Unstructured.io | Apache 2.0 | Plus + Enterprise |
 | Docling | MIT | IBM + Red Hat RHEL AI |
 | NeMo Curator | Apache 2.0 | NVIDIA AI Enterprise |
+| Polars | MIT | Community + Polars Cloud (managed, enterprise) |
 | RAPIDS | Apache 2.0 | NVIDIA AI Enterprise |
 | Presidio | MIT | Community + Microsoft |
 | Milvus | Apache 2.0 | Zilliz Cloud ($99/mo+) |
@@ -1238,6 +1387,8 @@ Cloud → AWS Bedrock or Azure OpenAI
 | Fiddler Guardrails | Proprietary | Enterprise support |
 | LlamaIndex | MIT | Community + LlamaCloud |
 | Haystack | Apache 2.0 | Community + deepset Cloud |
+| Open WebUI | MIT | Community + Enterprise (24/7 SLA, LTS) |
+| shadcn/ui | MIT | Community + Vercel backing |
 | LangChain | MIT | LangSmith Plus + Enterprise |
 | Vercel AI SDK | Apache 2.0 | Vercel Enterprise |
 | AI SDK Tools | Open Source | Community |
@@ -1255,8 +1406,8 @@ Cloud → AWS Bedrock or Azure OpenAI
 ## 🔗 All Links
 
 **Documentation:**
-- [Pydantic](https://docs.pydantic.dev) · [spaCy](https://spacy.io) · [Unstructured](https://docs.unstructured.io) · [Docling](https://docling.ai/docs)
-- [NeMo Curator](https://docs.nvidia.com/nemo-framework/user-guide/latest/datacuration/) · [RAPIDS](https://docs.rapids.ai) · [Presidio](https://microsoft.github.io/presidio)
+- [Pydantic](https://docs.pydantic.dev) · [spaCy](https://spacy.io) · [Dagster](https://docs.dagster.io/) · [dbt](https://docs.getdbt.com/) · [Unstructured](https://docs.unstructured.io) · [Docling](https://docling.ai/docs)
+- [NeMo Curator](https://docs.nvidia.com/nemo-framework/user-guide/latest/datacuration/) · [Polars](https://docs.pola.rs/) · [RAPIDS](https://docs.rapids.ai) · [Presidio](https://microsoft.github.io/presidio)
 - [Milvus](https://milvus.io/docs) · [pgvector](https://github.com/pgvector/pgvector) · [Chroma](https://docs.trychroma.com)
 - [Voyage AI](https://docs.voyageai.com) · [Cohere Embed](https://docs.cohere.com/docs/embeddings) · [Cohere Rerank](https://docs.cohere.com/docs/reranking)
 - [OpenAI](https://platform.openai.com/docs) · [Claude](https://www.anthropic.com/api) · [Cohere](https://cohere.com/embed) · [Grok](https://docs.x.ai) · [Hugging Face](https://huggingface.co/docs)
@@ -1265,18 +1416,20 @@ Cloud → AWS Bedrock or Azure OpenAI
 - [Portkey](https://docs.portkey.ai) · [Langfuse](https://langfuse.com/docs) · [PromptLayer](https://docs.promptlayer.com) · [Promptfoo](https://www.promptfoo.dev/docs/intro/)
 - [NeMo Guardrails](https://docs.nvidia.com/nemo/guardrails) · [Fiddler](https://docs.fiddler.ai/docs/guardrails)
 - [LlamaIndex](https://docs.llamaindex.ai) · [Haystack](https://docs.haystack.deepset.ai)
+- [Open WebUI](https://docs.openwebui.com/) · [shadcn/ui](https://ui.shadcn.com/docs)
 - [LangChain](https://python.langchain.com) · [Vercel AI SDK](https://ai-sdk.dev/docs) · [Arcade.dev](https://docs.arcade.dev)
 - [Ragas](https://docs.ragas.io) · [DeepEval](https://deepeval.com/docs/getting-started)
 - [Prometheus](https://prometheus.io/docs) · [Grafana](https://grafana.com/docs) · [Loki](https://grafana.com/docs/loki)
 - [AWS Bedrock](https://docs.aws.amazon.com/bedrock) · [Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai)
 
 **GitHub Repositories:**
-- [Pydantic](https://github.com/pydantic/pydantic) · [spaCy](https://github.com/explosion/spaCy) · [Unstructured](https://github.com/Unstructured-IO/unstructured)
-- [Docling](https://github.com/DS4SD/docling) · [NeMo](https://github.com/NVIDIA/NeMo) · [RAPIDS](https://github.com/rapidsai)
+- [Pydantic](https://github.com/pydantic/pydantic) · [spaCy](https://github.com/explosion/spaCy) · [Dagster](https://github.com/dagster-io/dagster) · [dbt](https://github.com/dbt-labs/dbt-core) · [Unstructured](https://github.com/Unstructured-IO/unstructured)
+- [Docling](https://github.com/DS4SD/docling) · [NeMo](https://github.com/NVIDIA/NeMo) · [Polars](https://github.com/pola-rs/polars) · [RAPIDS](https://github.com/rapidsai)
 - [Presidio](https://github.com/microsoft/presidio) · [Milvus](https://github.com/milvus-io/milvus) · [pgvector](https://github.com/pgvector/pgvector) · [Chroma](https://github.com/chroma-core/chroma)
 - [Unsloth](https://github.com/unslothai/unsloth) · [vLLM](https://github.com/vllm-project/vllm) · [Ray](https://github.com/ray-project/ray)
 - [MLflow](https://github.com/mlflow/mlflow) · [Comet](https://github.com/comet-ml/comet-ml) · [Portkey Gateway](https://github.com/Portkey-AI/gateway) · [Langfuse](https://github.com/langfuse/langfuse) · [Promptfoo](https://github.com/promptfoo/promptfoo)
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) · [LlamaIndex](https://github.com/run-llama/llama_index) · [Haystack](https://github.com/deepset-ai/haystack)
+- [Open WebUI](https://github.com/open-webui/open-webui) · [shadcn/ui](https://github.com/shadcn-ui/ui)
 - [LangChain](https://github.com/langchain-ai/langchain) · [Vercel AI SDK](https://github.com/vercel/ai) · [AI SDK Tools](https://github.com/midday-ai/ai-sdk-tools)
 - [Ragas](https://github.com/explodinggradients/ragas) · [DeepEval](https://github.com/confident-ai/deepeval) · [DeepTeam](https://github.com/confident-ai/deepteam)
 - [Prometheus](https://github.com/prometheus/prometheus) · [Grafana](https://github.com/grafana/grafana) · [Loki](https://github.com/grafana/loki)
