@@ -2,7 +2,7 @@
 
 > A comprehensive registry of production-grade tools and learning resources for building AI systems at enterprise scale
 
-Last Updated: 2025-11-25
+Last Updated: 2025-12-10
 
 ---
 
@@ -21,7 +21,7 @@ This repository contains comprehensive resources for enterprise AI development:
 
 **[View Full Tools Registry →](enterprise-ai-tools.md)**
 
-A curated collection of 46 production-grade tools for building enterprise AI systems.
+A curated collection of 47 production-grade tools for building enterprise AI systems.
 
 ### Categories
 
@@ -165,6 +165,7 @@ A curated collection of 46 production-grade tools for building enterprise AI sys
 - **[Langfuse](https://langfuse.com)** - Open-source LLM observability, prompt management
 - **[PromptLayer](https://www.promptlayer.com)** - Prompt management with versioning, A/B testing, and no-code editing
 - **[Promptfoo](https://www.promptfoo.dev)** - Open-source CLI for LLM evaluation, red teaming, and CI/CD testing
+- **[TrueFoundry AI Gateway](https://www.truefoundry.com/ai-gateway)** - Unified AI gateway for 250+ LLMs with enterprise governance, sub-3ms latency
 
 ---
 
@@ -235,6 +236,7 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 ### Categories
 
 - [GPU-Accelerated Data Processing](#gpu-accelerated-data-processing)
+- [Data Science Fundamentals](#data-science-fundamentals)
 - [ML Systems Engineering](#ml-systems-engineering)
 - [AI Engineering & Production Systems](#ai-engineering--production-systems)
 - [LLM Pre-training & Fine-tuning](#llm-pre-training--fine-tuning)
@@ -248,6 +250,14 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 **[View Section →](learning-paths-examples.md#gpu-accelerated-data-processing)**
 
 - **[NVIDIA DGX Spark Playbooks](https://github.com/nvidia/dgx-spark-playbooks)** - Step-by-step playbooks for AI/ML workloads on NVIDIA hardware, demonstrating 10-100x speedups
+
+---
+
+## 📊 Data Science Fundamentals
+
+**[View Section →](learning-paths-examples.md#data-science-fundamentals)**
+
+- **[Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)** - Comprehensive introduction to IPython, NumPy, Pandas, Matplotlib, and Scikit-Learn with full text as Jupyter notebooks (43k+ stars)
 
 ---
 
@@ -288,6 +298,7 @@ Curated tutorials, playbooks, and hands-on examples for mastering enterprise AI 
 
 **[View Section →](learning-paths-examples.md#agentic-workflows--multi-agent-systems)**
 
+- **[Hugging Face Agents Course](https://github.com/huggingface/agents-course)** - Comprehensive free course covering agent fundamentals, three frameworks (smolagents, LangGraph, LlamaIndex), and agentic RAG with final benchmark (24k+ stars)
 - **[LangChain Academy](https://academy.langchain.com/collections)** - Official free courses on agent development, LangGraph workflows, and production AI applications
 - **[Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns)** - Hands-on guide to building intelligent agentic systems with Jupyter notebooks by Antonio Gulli
 - **[Agent2Agent (A2A) Protocol Samples](https://github.com/a2aproject/a2a-samples)** - Official code samples demonstrating agent-to-agent communication with production-grade security patterns from Linux Foundation
@@ -379,12 +390,15 @@ Curated prompt libraries, code repositories, agent frameworks, and developer res
 **Code Repositories:**
 - **[Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)** - 12.1k stars, workflows, skills, slash commands
 - **[Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)** - 5.6k stars, 9 skill categories, 500+ app integrations
+- **[Claude Plugins Marketplace](https://claude-plugins.dev/)** - 6,196+ plugins with CLI manager for one-command installation
+- **[Claude Code Skill Factory](https://github.com/alirezarezvani/claude-code-skill-factory)** - 203 stars, interactive builders for skills, agents, prompts
 - **[Personal AI Infrastructure (PAI)](https://github.com/danielmiessler/Personal_AI_Infrastructure)** - 1.1k stars, orchestration framework with event-driven workflows
 - **[Vercel AI SDK Templates](https://vercel.com/templates/ai)** - 32+ production-ready templates
 
 **Agent Frameworks:**
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** - Industry-standard stateful multi-agent orchestration
 - **[CrewAI](https://github.com/crewAIInc/crewAI)** - 100k+ certified developers, role-based agent teams
+- **[HumanLayer](https://github.com/humanlayer/humanlayer)** - 7k+ stars, human-in-the-loop approval workflows across Slack, email, Discord
 
 ---
 
@@ -419,8 +433,8 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 ```
 .
 ├── README.md                      # This file - comprehensive index
-├── enterprise-ai-tools.md         # 46 production-grade AI tools
-├── learning-paths-examples.md     # 11 tutorials, playbooks, examples
+├── enterprise-ai-tools.md         # 47 production-grade AI tools
+├── learning-paths-examples.md     # 13 tutorials, playbooks, examples
 ├── ai-products.md                 # Enterprise AI products (4 platforms)
 ├── ai-resources.md                # AI resources & development tools
 └── CLAUDE.md                      # Contribution & maintenance guidelines
@@ -430,13 +444,13 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 
 ## 📊 Stats
 
-- **Enterprise AI Tools:** 46
+- **Enterprise AI Tools:** 47
 - **Tool Categories:** 19
-- **Learning Resources:** 11
-- **Learning Categories:** 6
+- **Learning Resources:** 13
+- **Learning Categories:** 7
 - **AI Products:** 4
-- **AI Dev Resources:** 17+ (prompts, repos, frameworks)
-- **Last Updated:** 2025-11-28
+- **AI Dev Resources:** 20+ (prompts, repos, frameworks)
+- **Last Updated:** 2025-12-10
 
 ---
 

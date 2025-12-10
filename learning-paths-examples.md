@@ -52,6 +52,90 @@ Step-by-step playbooks for AI/ML workloads on NVIDIA hardware, designed for DGX 
 
 ---
 
+## Data Science Fundamentals
+
+### Python Data Science Handbook
+**Website:** https://jakevdp.github.io/PythonDataScienceHandbook/
+**Repository:** https://github.com/jakevdp/PythonDataScienceHandbook
+**Platform:** Python / Jupyter Notebooks
+**Level:** Beginner to Intermediate
+
+**What It Covers:**
+Comprehensive introduction to the core libraries for working with data in Python, with full text available as Jupyter notebooks. Published by O'Reilly Media.
+
+**Key Learning Areas:**
+- **IPython:**
+  - Interactive Python shell features
+  - Magic commands and shell integration
+  - Debugging and profiling
+  - Enhanced interactive computing
+
+- **NumPy:**
+  - Numerical computing fundamentals
+  - Array operations and broadcasting
+  - Universal functions (ufuncs)
+  - Aggregations and array manipulation
+
+- **Pandas:**
+  - Data manipulation and analysis
+  - DataFrames and Series
+  - Indexing, selection, and filtering
+  - Data cleaning and transformation
+  - Groupby operations and aggregations
+
+- **Matplotlib:**
+  - Data visualization techniques
+  - Line plots, scatter plots, histograms
+  - Customization and styling
+  - Seaborn for statistical visualization
+  - Geographic data with Basemap
+
+- **Machine Learning (Scikit-Learn):**
+  - Supervised learning algorithms
+  - Unsupervised learning (clustering, dimensionality reduction)
+  - Model validation and hyperparameter tuning
+  - Feature engineering
+  - Support vector machines, decision trees, random forests
+  - Principal component analysis (PCA)
+
+**Why Use This:**
+- Written by Jake VanderPlas (Director of Open Software at Coiled, Python core contributor)
+- Published by O'Reilly Media (1st edition 2016)
+- Free online access with full Jupyter notebooks
+- 43k+ GitHub stars
+- Executable notebooks via Google Colab
+- Foundation for Python data science ecosystem
+- Progresses from basics to advanced techniques
+- Balances theory with practical implementation
+- Widely adopted in university courses and bootcamps
+
+**Prerequisites:**
+- Basic Python programming
+- No prior data science experience required
+- Helpful but not required: basic statistics, linear algebra
+
+**Estimated Time:**
+- IPython section: 2-3 hours
+- NumPy section: 4-6 hours
+- Pandas section: 6-8 hours
+- Matplotlib section: 4-6 hours
+- Machine Learning section: 8-10 hours
+- Full handbook: 30-40 hours
+
+**License:**
+- Text: CC-BY-NC-ND
+- Code: MIT
+
+**Related Tools:**
+- NumPy, Pandas, Matplotlib, Scikit-Learn
+- IPython/Jupyter for interactive computing
+- Seaborn for statistical visualization
+- RAPIDS (cuDF, cuML) for GPU-accelerated versions
+- Polars for high-performance DataFrames
+- Plotly/Bokeh for interactive visualizations
+
+---
+
 ## ML Systems Engineering
 
 ### Machine Learning Systems Book
@@ -349,6 +433,72 @@ Community-driven guide to prompt engineering for LLMs, fundamentals through cutt
 
 ## Agentic Workflows & Multi-Agent Systems
 
+### Hugging Face Agents Course
+**Repository:** https://github.com/huggingface/agents-course
+**Platform:** Hugging Face (smolagents, LangGraph, LlamaIndex)
+**Level:** Intermediate
+
+**What It Covers:**
+Comprehensive free course progressing from AI agent fundamentals to building production-ready agents across multiple frameworks, with a final benchmark assessment and leaderboard.
+
+**Key Learning Areas:**
+- **Agent Fundamentals (Unit 1):**
+  - What are agents and LLMs
+  - Messages, special tokens, and chat templates
+  - Tools and agent architecture
+  - Bonus: Fine-tuning LLMs for function-calling
+
+- **Agent Frameworks (Unit 2):**
+  - smolagents (Hugging Face's lightweight agent framework)
+  - LangGraph for stateful workflows
+  - LlamaIndex for RAG-enhanced agents
+  - Bonus: Agent tracing and evaluation techniques
+
+- **Agentic RAG (Unit 3):**
+  - Building retrieval-augmented agents
+  - Implementation across all three frameworks
+  - Bonus: Agents in game environments (Pokemon)
+
+- **Final Project (Unit 4):**
+  - Building a complete agent system
+  - Automated evaluation and benchmarking
+  - Public leaderboard for performance comparison
+
+**Why Use This:**
+- Official Hugging Face course (Apache-2.0 license)
+- 24k+ GitHub stars, 1.7k forks, 179 contributors
+- Covers three major frameworks in one course
+- Hands-on projects with real-world applications
+- Free enrollment with community Discord support
+- Progressive curriculum from basics to benchmark-ready agents
+- Actively maintained with community contributions
+
+**Prerequisites:**
+- Basic Python programming
+- Foundational understanding of large language models
+- No prior agent development experience required
+
+**Estimated Time:**
+- Unit 0-1 (Fundamentals): 4-6 hours
+- Unit 2 (Frameworks): 8-10 hours
+- Unit 3 (Agentic RAG): 6-8 hours
+- Unit 4 (Final Project): 4-6 hours
+- Bonus content: 6-8 hours
+- Full course: 30-40 hours
+
+**Community:**
+- [Discord](https://huggingface.co/join/discord) - Community support and discussion
+- [GitHub Issues](https://github.com/huggingface/agents-course/issues) - Bug reports and contributions
+
+**Related Tools:**
+- smolagents (Hugging Face agent framework)
+- LangChain/LangGraph for orchestration
+- LlamaIndex for RAG applications
+- Hugging Face Transformers and Hub
+- Evaluation frameworks for agent benchmarking
+
+---
+
 ### LangChain Academy
 **Website:** https://academy.langchain.com/collections
 **Platform:** LangChain / LangGraph
@@ -498,9 +648,9 @@ Code samples and demos demonstrating the Agent2Agent (A2A) Protocol—an open st
 ---
 
 ## Version Information
-- **Last Updated:** 2025-11-25
-- **Total Resources:** 11
-- **Categories Covered:** 6 (GPU-Accelerated Data Processing, ML Systems Engineering, AI Engineering & Production Systems, LLM Pre-training & Fine-tuning, Prompt Engineering & LLM Techniques, Agentic Workflows & Multi-Agent Systems)
+- **Last Updated:** 2025-12-10
+- **Total Resources:** 13
+- **Categories Covered:** 7 (GPU-Accelerated Data Processing, Data Science Fundamentals, ML Systems Engineering, AI Engineering & Production Systems, LLM Pre-training & Fine-tuning, Prompt Engineering & LLM Techniques, Agentic Workflows & Multi-Agent Systems)
 
 ---
 

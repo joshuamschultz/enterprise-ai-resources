@@ -2,7 +2,7 @@
 
 > Curated prompt libraries, code repositories, frameworks, and developer resources for building AI applications
 
-**Last Updated:** 2025-11-28
+**Last Updated:** 2025-12-10
 
 ---
 
@@ -214,6 +214,69 @@
 **⚡ What:** Complete learning resources for Claude Code
 
 **📊 Access:** Free
+
+---
+
+#### Claude Plugins Marketplace
+**🔗 Links:** [Website](https://claude-plugins.dev/)
+
+**⚡ What:** Community marketplace and CLI tool for discovering and installing Claude Code plugins (6,196+ plugins)
+
+**🎯 Use When:**
+- Need one-command plugin installation for Claude Code
+- Browsing specialized Claude Code plugins by category
+- Managing installed plugins (list, enable, disable)
+- Want skills-enhanced plugins for development tasks
+
+**💪 Why:**
+- **6,196+ Plugins:** Development, AI/ML, productivity, security, document processing
+- **One-Command Install:** `npx claude-plugins install <plugin-identifier>`
+- **CLI Management:** List, enable, disable installed plugins
+- **Popular Plugins:** Frontend-design (45.3k downloads), PR toolkit, code review
+- **Skills Support:** Browse plugins with specialized capabilities
+- **Open Source:** Community-driven with public GitHub repository
+
+**Getting Started:**
+```bash
+npx claude-plugins install @anthropics/claude-code-plugins/frontend-design
+```
+
+**Requirements:** Claude Code v2.0.12+
+
+**📊 License:** Open Source | **Access:** Free
+
+---
+
+#### Claude Code Skill Factory
+**🔗 Links:** [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory)
+
+**⚡ What:** Open-source toolkit for building production-ready Claude Skills, agents, slash commands, and prompts at scale (203 stars)
+
+**🎯 Use When:**
+- Building custom Claude Skills from scratch
+- Creating specialized agents for domain tasks
+- Need interactive builders with guided Q&A workflows
+- Want multi-format output (XML, Claude, ChatGPT, Gemini)
+- Generating standardized, quality-validated content
+
+**💪 Why:**
+- **Interactive Builders:** `/build skill`, `/build agent`, `/build prompt`, `/build hook`
+- **9 Production Skills:** AWS architect, content researcher, M365 tenant manager, etc.
+- **5 Guide Agents:** Walk through creation processes interactively
+- **10+ Slash Commands:** Automation and validation workflows
+- **Smart Detection:** Auto-determines when Python code is needed vs prompt-only
+- **7-Point Validation:** Quality checks for generated content
+- **Language Templates:** Python, JavaScript, Rust, Go specific patterns
+- **Safety Checks:** Tool detection, secrets identification
+- **Prompt Factory:** 69 professional presets across 15 domains
+- **203 GitHub Stars:** Active community (v1.4.0, Oct 2025)
+
+**Quick Shortcuts:**
+1. Natural language: "I want to build something"
+2. Slash commands: `/build skill`, `/build agent`, `/build prompt`, `/build hook`
+3. Ready-made skills: Install Prompt Factory for presets
+
+**📊 License:** MIT | **Access:** Free
 
 ---
 
@@ -438,6 +501,44 @@ crewai create crew <project_name>
 
 ---
 
+### HumanLayer
+**🔗 Links:** [GitHub](https://github.com/humanlayer/humanlayer) · [PyPI](https://pypi.org/project/humanlayer/) · [Docs](https://www.humanlayer.dev/docs/frameworks/crewai) · [Website](https://humanlayer.vercel.app/)
+
+**⚡ What:** Human-in-the-loop infrastructure for AI agents with approval workflows across Slack, email, and Discord (7k+ stars)
+
+**🎯 Use When:**
+- Need human approval for high-stakes agent actions
+- Deploying autonomous agents that require oversight
+- Building AI workflows with compliance requirements
+- Want to guarantee human review of critical operations
+- Implementing safe tool-calling with approval gates
+
+**💪 Why:**
+- **Framework Agnostic:** Works with LangChain, CrewAI, ControlFlow, Vercel AI SDK, Mastra
+- **LLM Agnostic:** Bring your own LLM (OpenAI, Claude, Llama, etc.)
+- **Approval Workflows:** Deterministic human oversight via `@require_approval` decorator
+- **Multi-Channel:** Slack, Email, Discord integration for approval requests
+- **Tool-Level Safety:** Baked into functions to guarantee oversight even if LLM hallucinates
+- **7,000+ GitHub Stars:** Active community and adoption
+- **Production Ready:** Version 0.7.9+ with enterprise features
+- **Human-as-Tool:** Agents can contact humans for feedback and help via `human_as_tool` decorator
+
+**Getting Started:**
+```bash
+pip install humanlayer
+```
+
+**Example Use Cases:**
+- Financial transactions requiring approval
+- Database modifications with human review
+- API calls to production systems
+- Compliance-sensitive operations
+- Email sending with content review
+
+**📊 License:** Apache 2.0 | **Access:** Free
+
+---
+
 ### Other Leading Frameworks
 
 #### AutoGPT
@@ -546,6 +647,7 @@ Next.js/React → Vercel AI SDK Templates (32+ templates)
 Personal AI Infrastructure → PAI (orchestration, event-driven workflows)
 Multi-Agent → LangGraph (stateful, production-ready)
 Role-Based Agents → CrewAI (100k+ certified devs)
+Human-in-the-Loop → HumanLayer (approval workflows, multi-channel)
 RAG Systems → LlamaIndex, LangChain
 Microsoft Stack → Semantic Kernel, Azure AI Templates
 ```
@@ -555,6 +657,8 @@ Microsoft Stack → Semantic Kernel, Azure AI Templates
 Official → anthropics/claude-code
 Community → awesome-claude-code (12.1k stars)
 Skills Library → awesome-claude-skills (5.6k stars, 500+ app integrations)
+Plugins → claude-plugins.dev (6,196+ plugins, CLI manager)
+Skill Builder → claude-code-skill-factory (interactive builders, 69 presets)
 Workflows → claude-code-guide, ClaudeLog
 Skills → Agent skills, slash commands, CLAUDE.md configs
 ```
@@ -582,6 +686,7 @@ Multi-Agent → LangGraph
 ```
 Stateful Agents → LangGraph (durable execution, memory)
 Autonomous Teams → CrewAI (role-based collaboration)
+Human Oversight → HumanLayer (approval gates, compliance)
 Microsoft → Azure AI Templates (Contoso Chat)
 Workflows → CrewAI Flows (event-driven, conditional)
 ```
@@ -600,6 +705,7 @@ Prototyping → LangGraph Studio (visual)
 |-----------|----------|--------------|-------------|
 | **LangGraph** | Stateful multi-agent | Industry standard | Durable execution |
 | **CrewAI** | Role-based teams | 20% | Event-driven flows |
+| **HumanLayer** | Human oversight | 7k+ stars | Approval workflows |
 | **AutoGPT** | Autonomous tasks | 25% | Self-planning |
 | **LlamaIndex** | RAG systems | - | Data framework |
 | **Semantic Kernel** | Microsoft stack | - | Enterprise SDK |
@@ -636,6 +742,7 @@ Documents → Unstructured/Docling (from enterprise-ai-tools.md)
 ```
 User Request → LangGraph (orchestration)
             → CrewAI Crews (role-based agents)
+            → HumanLayer (approval gates)
             → Claude Code (coding tasks)
             → LangSmith (tracing)
             → Production deployment
@@ -671,6 +778,8 @@ Use Case → DAIR.AI Guide (techniques)
 - [Hugging Face Datasets](https://huggingface.co/datasets)
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 - [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)
+- [Claude Plugins Marketplace](https://claude-plugins.dev/)
+- [Claude Code Skill Factory](https://github.com/alirezarezvani/claude-code-skill-factory)
 - [Claude Code Guide](https://github.com/Cranot/claude-code-guide)
 - [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
 - [Vercel AI SDK](https://github.com/vercel/ai)
@@ -678,6 +787,11 @@ Use Case → DAIR.AI Guide (techniques)
 - [LangGraph GitHub](https://github.com/langchain-ai/langgraph)
 - [awesome-LangGraph](https://github.com/von-development/awesome-LangGraph)
 - [CrewAI GitHub](https://github.com/crewAIInc/crewAI)
+- [HumanLayer GitHub](https://github.com/humanlayer/humanlayer)
+- [HumanLayer PyPI](https://pypi.org/project/humanlayer/)
+- [HumanLayer Website](https://humanlayer.vercel.app/)
+- [HumanLayer Docs](https://www.humanlayer.dev/docs/frameworks/crewai)
+- [Human-in-the-Loop for AI Agents Best Practices](https://www.permit.io/blog/human-in-the-loop-for-ai-agents-best-practices-frameworks-use-cases-and-demo)
 - [Microsoft AI Templates](https://learn.microsoft.com/en-us/azure/developer/ai/intelligent-app-templates)
 - [InfoQ Design Patterns](https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/)
 - [AI Assisted Development 2025](https://www.infoq.com/minibooks/ai-assisted-development-2025/)

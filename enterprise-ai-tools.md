@@ -2,7 +2,7 @@
 
 > Production-grade tools for building AI systems at enterprise scale
 
-**Last Updated:** 2025-11-30
+**Last Updated:** 2025-12-10
 
 ---
 
@@ -821,6 +821,35 @@
 **💰 Pricing:** Open-source (free) → Cloud/Enterprise
 
 **📊 License:** MIT | **Support:** Community + Enterprise
+
+---
+
+### TrueFoundry AI Gateway
+**🔗 Links:** [Website](https://www.truefoundry.com/ai-gateway) · [Docs](https://docs.truefoundry.com) · [GitHub](https://github.com/truefoundry)
+
+**⚡ What:** Unified AI gateway for managing 250+ LLMs with enterprise-grade governance, routing, and observability
+
+**🎯 Use When:**
+- Consolidating access to multiple LLM providers (OpenAI, Claude, Gemini, Mistral, Groq, 250+ models)
+- Enterprise-scale AI governance with rate limiting, quotas, and RBAC
+- Multi-model orchestration requiring intelligent routing and automatic failover
+- Self-hosted model deployment (LLaMA, Mistral, Falcon) with vLLM, SGLang, KServe integration
+- Air-gapped or VPC deployments requiring zero data egress
+
+**💪 Why:**
+- **Performance:** Sub-3ms internal latency, 99.99% uptime SLA, 10B+ requests/month
+- **Smart Routing:** Latency-based model selection, weighted load balancing, geo-aware routing
+- **Governance:** Rate limiting, cost quotas, RBAC, service account management at scale
+- **Observability:** Full request/response logging, token usage, latency, error tracking
+- **Safety:** Input/output guardrails, PII filtering, toxicity detection, custom rules
+- **MCP Integration:** Native Model Context Protocol support for enterprise tools
+- **Deployment:** VPC, on-premise, air-gapped, multi-cloud with Helm-based autoscaling
+- **Compliance:** SOC 2, HIPAA, GDPR ready with audit logging
+- 10+ Fortune 500 customers, 30% average cost optimization
+
+**💰 Pricing:** Free tier → Enterprise
+
+**📊 License:** Proprietary | **Support:** 24/7 Enterprise support with SLA
 
 ---
 
