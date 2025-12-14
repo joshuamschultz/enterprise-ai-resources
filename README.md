@@ -2,7 +2,7 @@
 
 > A comprehensive registry of production-grade tools and learning resources for building AI systems at enterprise scale
 
-Last Updated: 2025-12-10
+Last Updated: 2025-12-14
 
 ---
 
@@ -392,6 +392,7 @@ Curated prompt libraries, code repositories, agent frameworks, and developer res
 - **[Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)** - 5.6k stars, 9 skill categories, 500+ app integrations
 - **[Claude Plugins Marketplace](https://claude-plugins.dev/)** - 6,196+ plugins with CLI manager for one-command installation
 - **[Claude Code Skill Factory](https://github.com/alirezarezvani/claude-code-skill-factory)** - 203 stars, interactive builders for skills, agents, prompts
+- **[SurfSense](https://github.com/MODSetter/SurfSense)** - 11.4k stars, open-source NotebookLM/Perplexity alternative with 15+ integrations
 - **[Personal AI Infrastructure (PAI)](https://github.com/danielmiessler/Personal_AI_Infrastructure)** - 1.1k stars, orchestration framework with event-driven workflows
 - **[Vercel AI SDK Templates](https://vercel.com/templates/ai)** - 32+ production-ready templates
 
@@ -450,7 +451,7 @@ Contributions are welcome! See **[CLAUDE.md](CLAUDE.md)** for detailed guideline
 - **Learning Categories:** 7
 - **AI Products:** 4
 - **AI Dev Resources:** 20+ (prompts, repos, frameworks)
-- **Last Updated:** 2025-12-10
+- **Last Updated:** 2025-12-14
 
 ---
 

@@ -2,7 +2,7 @@
 
 > Curated prompt libraries, code repositories, frameworks, and developer resources for building AI applications
 
-**Last Updated:** 2025-12-10
+**Last Updated:** 2025-12-14
 
 ---
 
@@ -312,6 +312,41 @@ npx claude-plugins install @anthropics/claude-code-plugins/frontend-design
 - **Security:** Forensics, threat hunting
 
 **📊 License:** Apache 2.0 | **Access:** Free
+
+---
+
+### SurfSense
+**🔗 Links:** [GitHub](https://github.com/MODSetter/SurfSense) · [Website](https://surfsense.net)
+
+**⚡ What:** Open-source AI research agent alternative to NotebookLM and Perplexity (11.4k stars)
+
+**🎯 Use When:**
+- Building personalized knowledge bases with AI-powered search
+- Need multi-source integration (Slack, Notion, GitHub, Discord, Jira, etc.)
+- Want cited responses with source attribution
+- Require local LLM support for privacy (Ollama)
+- Building team collaboration with role-based access
+- Need podcast generation from research content
+
+**💪 Why:**
+- **11,400+ GitHub Stars:** Rapidly growing community (950 forks, 40 contributors)
+- **15+ Integrations:** Slack, Linear, Jira, ClickUp, Notion, YouTube, GitHub, Discord, and more
+- **Advanced Search:** Hybrid semantic + full-text search with reciprocal rank fusion
+- **Cited Responses:** Perplexity-style sourced answers
+- **Podcast Generation:** 3-minute podcasts in under 20 seconds
+- **Privacy-First:** Local LLM support via Ollama
+- **50+ File Formats:** Documents, images, videos
+- **Team Features:** Role-based access control for shared knowledge bases
+- **Modern Stack:** FastAPI, PostgreSQL/pgvector, LangChain, LangGraph, Next.js 15, React 19
+
+**Getting Started:**
+```bash
+git clone https://github.com/MODSetter/SurfSense.git
+cd SurfSense
+docker-compose up
+```
+
+**📊 License:** Apache-2.0 | **Access:** Free & Self-Hosted
 
 ---
 
@@ -644,6 +679,7 @@ Research-Backed → DAIR.AI (papers, notebooks, courses)
 **Building AI Applications:**
 ```
 Next.js/React → Vercel AI SDK Templates (32+ templates)
+AI Research Agent → SurfSense (NotebookLM/Perplexity alternative, 11.4k stars)
 Personal AI Infrastructure → PAI (orchestration, event-driven workflows)
 Multi-Agent → LangGraph (stateful, production-ready)
 Role-Based Agents → CrewAI (100k+ certified devs)
@@ -782,6 +818,7 @@ Use Case → DAIR.AI Guide (techniques)
 - [Claude Code Skill Factory](https://github.com/alirezarezvani/claude-code-skill-factory)
 - [Claude Code Guide](https://github.com/Cranot/claude-code-guide)
 - [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
+- [SurfSense](https://github.com/MODSetter/SurfSense)
 - [Vercel AI SDK](https://github.com/vercel/ai)
 - [Vercel AI Templates](https://vercel.com/templates/ai)
 - [LangGraph GitHub](https://github.com/langchain-ai/langgraph)
